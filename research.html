@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<!-- Link to external CSS file (same as main page) -->
+<link rel="stylesheet" type="text/css" href="style.css">
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<div class="site-header">
+  <nav>
+    <a href="https://www.zju.edu.cn/"><img src="images/zju_logo.png" alt="ZJU Logo" class="zju-logo"></a>
+    <a href="index.html"><img src="images/regent_logo.png" alt="Regent Logo" class="regent-logo"></a>
+    <div class="nav-links">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        
+        <!-- RESEARCH with Dropdown -->
+        <li class="dropdown">
+          <a href="research.html" class="dropdown-toggle">RESEARCH <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="research.html#smart-grids">Smart Grids & Microgrids</a></li>
+            <li><a href="research.html#stability">Inverter Stability & Grid Forming Control</a></li>
+            <li><a href="research.html#topologies">Converter Topologies</a></li>
+            <li><a href="research.html#transportation">Electrified Transportation & Charging Interfaces</a></li>
+            <li><a href="research.html#power-info">Power & Information Transfer</a></li>
+            <li><a href="research.html#reliability">Reliability, Diagnostics & Power Quality</a></li>
+          </ul>
+        </li>
+        
+        <li><a href="publication.html">PUBLICATIONS</a></li>
+        <li><a href="people.html">MEMBERS</a></li>
+        <li><a href="project.html">PROJECTS</a></li>
+        <li class="dropdown">
+          <a href="contact.html" class="dropdown-toggle">CONTACT US<i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="recruitment.html">RECRUITMENT</a></li>
+            <li><a href="collaboration.html">COLLABORATION</a></li>
+          </ul>
+        </li>
+        <li><a href="">中/EN</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<!-- Page Header - Title same size as "Welcome to ReGENT!" -->
+<div class="page-header">
+  <h1>Research Areas</h1>
+  <p>Our research spans power-electronic-dominated energy systems, with a focus on smart grids, advanced power conversion, and grid-connected control.</p>
+</div>
+
+<!-- Quick Navigation Buttons -->
+<div class="research-nav">
+  <a href="#smart-grids" class="research-nav-btn">Smart Grids</a>
+  <a href="#stability" class="research-nav-btn">Inverter Stability</a>
+  <a href="#topologies" class="research-nav-btn">Converter Topologies</a>
+  <a href="#transportation" class="research-nav-btn">Electrified Transport</a>
+  <a href="#power-info" class="research-nav-btn">Power & Information</a>
+  <a href="#reliability" class="research-nav-btn">Reliability</a>
+</div>
+
+<!-- Research Container -->
+<div class="research-container">
+
+  <!-- Smart Grids & Microgrids -->
+  <div id="smart-grids" class="research-section">
+    <h2><i class="fas fa-bolt"></i> Smart Grids & Microgrids</h2>
+    <p>We study the design and operation of smart grids and microgrids with high penetration of renewable energy and energy storage. Our focus includes modeling and control of inverter‑dominated networks, hierarchical and distributed coordination strategies, and energy management under uncertainty. The goal is to improve stability, resilience, and power quality in both grid‑connected and islanded operation, supported by system‑level validation.</p>
+    <ul class="research-topics">
+      <li><i class="fas fa-sitemap"></i> Hierarchical control (primary/secondary/tertiary), distributed coordination, resilience</li>
+      <li><i class="fas fa-chart-pie"></i> Energy management and optimal scheduling with storage and flexible demand</li>
+      <li><i class="fas fa-exclamation-triangle"></i> Power quality and protection challenges in inverter‑dominated microgrids</li>
+      <li><i class="fas fa-link"></i> Multi‑microgrid coordination and interoperability</li>
+    </ul>
+    <div class="back-to-top">
+      <a href="#"><i class="fas fa-arrow-up"></i> Back to Top</a>
+    </div>
+  </div>
+
+  <!-- Inverter‑Dominated Stability & Grid‑Forming Control -->
+  <div id="stability" class="research-section">
+    <h2><i class="fas fa-chart-line"></i> Inverter‑Dominated Stability & Grid‑Forming Control</h2>
+    <p>High converter penetration introduces new stability mechanisms and interaction pathways. We investigate grid‑forming and grid‑following control strategies, impedance interactions, and harmonic stability, with particular attention to energy‑storage inverters and weak grids. We aim to provide design guidelines that balance dynamic performance, robustness, and practical implementation constraints.</p>
+    <ul class="research-topics">
+      <li><i class="fas fa-cog"></i> Grid‑forming energy‑storage inverter control and stability</li>
+      <li><i class="fas fa-wave-square"></i> Impedance modeling, harmonic mitigation, and interaction analysis</li>
+      <li><i class="fas fa-exchange-alt"></i> Transition control between grid‑connected and islanded operation</li>
+      <li><i class="fas fa-shield-alt"></i> Robust control under uncertain grid conditions</li>
+    </ul>
+    <div class="back-to-top">
+      <a href="#"><i class="fas fa-arrow-up"></i> Back to Top</a>
+    </div>
+  </div>
+
+  <!-- Converter Topologies -->
+  <div id="topologies" class="research-section">
+    <h2><i class="fas fa-microchip"></i> Converter Topologies (Switched‑Capacitor, Differential, Multi‑Port)</h2>
+    <p>We develop and analyze converter topologies that achieve high efficiency, high power density, and flexible power routing for modern applications. Topics include switched‑capacitor and differential converters, and multi‑port converters that integrate renewable sources, storage, and loads. Our work spans topology synthesis, modeling, modulation, and control, supported by prototype validation.</p>
+    <ul class="research-topics">
+      <li><i class="fas fa-cubes"></i> Switched‑capacitor converter topology, modeling, and control</li>
+      <li><i class="fas fa-code-branch"></i> Differential and multi‑port converter modulation and control</li>
+      <li><i class="fas fa-balance-scale"></i> Voltage balancing, circulating current mitigation, and protection considerations</li>
+      <li><i class="fas fa-car-battery"></i> Application‑driven design for renewables, storage, and charging systems</li>
+    </ul>
+    <div class="back-to-top">
+      <a href="#"><i class="fas fa-arrow-up"></i> Back to Top</a>
+    </div>
+  </div>
+
+  <!-- Electrified Transportation & Charging Interfaces -->
+  <div id="transportation" class="research-section">
+    <h2><i class="fas fa-car"></i> Electrified Transportation & Charging Interfaces</h2>
+    <p>Power electronics is a key enabler for electrified transportation, including traction drives, onboard/offboard charging, and grid interaction. We investigate converter and control solutions that improve efficiency, reliability, and grid compatibility, and we explore integration with energy storage and energy management frameworks.</p>
+    <ul class="research-topics">
+      <li><i class="fas fa-charging-station"></i> Traction and charging power conversion architectures</li>
+      <li><i class="fas fa-plug"></i> Grid‑interactive charging and power quality requirements</li>
+      <li><i class="fas fa-battery-full"></i> Energy management and coordination with storage systems</li>
+    </ul>
+    <div class="back-to-top">
+      <a href="#"><i class="fas fa-arrow-up"></i> Back to Top</a>
+    </div>
+  </div>
+
+  <!-- Power & Information Transfer -->
+  <div id="power-info" class="research-section">
+    <h2><i class="fas fa-wifi"></i> Power & Information Transfer (Dual Power/Data Modulation)</h2>
+    <p>Emerging applications require power conversion systems that also communicate and coordinate. We explore techniques for embedding information transfer into power electronics systems (e.g., dual power/data modulation), and related concepts in power‑line or wireless transfer to support monitoring, control, and system integration.</p>
+    <ul class="research-topics">
+      <li><i class="fas fa-satellite-dish"></i> Dual power/data modulation and communication‑aware converter control</li>
+      <li><i class="fas fa-broadcast-tower"></i> Power‑line or wireless power‑and‑information transfer concepts</li>
+      <li><i class="fas fa-microchip"></i> System integration: sensing, estimation, and controller coordination</li>
+    </ul>
+    <div class="back-to-top">
+      <a href="#"><i class="fas fa-arrow-up"></i> Back to Top</a>
+    </div>
+  </div>
+
+  <!-- Reliability, Diagnostics, and Power Quality -->
+  <div id="reliability" class="research-section">
+    <h2><i class="fas fa-shield-alt"></i> Reliability, Diagnostics, and Power Quality</h2>
+    <p>We study reliability‑aware design and operation of power electronic systems, with attention to capacitors, thermal stress, and fault behavior. We also develop methods for power quality improvement, including harmonic mitigation and stability under non‑ideal grid conditions.</p>
+    <ul class="research-topics">
+      <li><i class="fas fa-hourglass-half"></i> Capacitor lifetime estimation and condition monitoring</li>
+      <li><i class="fas fa-exclamation-circle"></i> Fault diagnosis and fault‑tolerant control</li>
+      <li><i class="fas fa-wave-square"></i> Power quality enhancement and harmonic mitigation</li>
+    </ul>
+    <div class="back-to-top">
+      <a href="#"><i class="fas fa-arrow-up"></i> Back to Top</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- Quick Contact Strip-->
+<div class="contact-strip">
+    <div class="contact-container">
+    
+    <div class="contact-item">
+      <i class="fas fa-envelope contact-icon"></i>
+      <span class="contact-text">
+        <a href="mailto:regent.lab@zju.edu.cn">regent.lab@zju.edu.cn</a>
+      </span>
+    </div>
+    <span class="contact-divider">|</span>
+    <div class="contact-item">
+      <i class="fas fa-map-marker-alt contact-icon"></i>
+      <span class="contact-text">ZJU Yuquan Campus,Hangzhou</span>
+    </div>
+    <span class="contact-divider">|</span>
+    <div class="contact-item">
+      <i class="fas fa-flask contact-icon"></i>
+      <span class="contact-text">Lab tours: by appointment</span>
+    </div>
+  </div>
+  <div class="copyright-row">
+    <div class="contact-container">
+      <div class="copyright-text">
+        <br><i class="far fa-copyright"></i> 2026 ReGENT Research Group. All rights reserved. 
+        Zhejiang University, College of Electrical Engineering
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Dropdown Script -->
+<script src="dropdown.js"></script>
+
+
+<script>
+// Optional: Highlight active section in navigation when scrolling
+window.addEventListener('scroll', function() {
+  const sections = document.querySelectorAll('.research-section');
+  const navBtns = document.querySelectorAll('.research-nav-btn');
+  
+  let current = '';
+  
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 150;
+    const sectionBottom = sectionTop + section.offsetHeight;
+    if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
+      current = section.getAttribute('id');
+    }
+  });
+  
+  navBtns.forEach(btn => {
+    btn.classList.remove('active');
+    if (btn.getAttribute('href') === `#${current}`) {
+      btn.classList.add('active');
+    }
+  });
+});
+</script>
+
+</body>
+</html>

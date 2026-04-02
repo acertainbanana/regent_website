@@ -1,0 +1,2279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<!-- Link to external CSS file (same as main page) -->
+<link rel="stylesheet" type="text/css" href="style.css">
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<div class="site-header">
+  <nav>
+    <a href="https://www.zju.edu.cn/"><img src="images/zju_logo.png" alt="ZJU Logo" class="zju-logo"></a>
+    <a href="index.html"><img src="images/regent_logo.png" alt="Regent Logo" class="regent-logo"></a>
+    <div class="nav-links">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li class="dropdown">
+          <a href="research.html" class="dropdown-toggle">RESEARCH <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="research.html#smart-grids">Smart Grids & Microgrids</a></li>
+            <li><a href="research.html#stability">Inverter Stability & Grid Forming Control</a></li>
+            <li><a href="research.html#topologies">Converter Topologies</a></li>
+            <li><a href="research.html#transportation">Electrified Transportation & Charging Interfaces</a></li>
+            <li><a href="research.html#power-info">Power & Information Transfer</a></li>
+            <li><a href="research.html#reliability">Reliability, Diagnostics & Power Quality</a></li>
+          </ul>
+        </li>
+        
+        <li><a href="publication.html">PUBLICATIONS</a></li>
+        <li><a href="people.html">MEMBERS</a></li>
+        <li><a href="project.html">PROJECTS</a></li>
+        <li class="dropdown">
+          <a href="contact.html" class="dropdown-toggle">CONTACT US<i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="recruitment.html">RECRUITMENT</a></li>
+            <li><a href="collaboration.html">COLLABORATION</a></li>
+          </ul>
+        </li>
+        <li><a href="">中/EN</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<!-- Page Header -->
+<div class="page-header">
+  <h1>Publications</h1>
+</div>
+
+<!-- Publications Container -->
+<div class="publications-container">
+
+  <!-- Filter Section -->
+  <div class="filter-section">
+    <h2><i class="fas fa-filter"></i> Filter Publications</h2>
+    
+    <div class="filter-row">
+      <div class="filter-group">
+        <label><i class="fas fa-calendar"></i> Year</label>
+        <select id="yearFilter" class="filter-select">
+          <option value="all">All Years</option>
+		  <option value="2026">2026</option>
+          <option value="2025">2025</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+          <option value="2015">2015</option>
+		  <option value="2014">2014</option>
+		  <option value="2013">2013</option>
+		  <option value="2012">2012</option>
+		  <option value="2011">2011</option>
+		  <option value="2010">2010</option>
+		  <option value="2009">2009</option>
+		  <option value="2008">2008</option>
+		  <option value="2007">2007</option>
+		  <option value="2006">2006</option>
+        </select>
+      </div>
+      
+      <div class="filter-group">
+        <label><i class="fas fa-tag"></i> Publication Type</label>
+        <select id="typeFilter" class="filter-select">
+          <option value="all">All Types</option>
+          <option value="journal">Journal Articles</option>
+          <option value="conference">Conference Papers</option>
+          <option value="book">Book</option>
+		  <option value="book-chapter">Book Chapter</option>
+          <option value="patent">Patents</option>
+        </select>
+      </div>
+      
+      <div class="filter-group">
+        <label><i class="fas fa-search"></i> Search</label>
+        <input type="text" id="searchFilter" class="filter-input" placeholder="Search by title, author, or venue...">
+      </div>
+    </div>
+    
+    <div class="filter-actions">
+      <button class="filter-btn" onclick="applyFilters()">
+        <i class="fas fa-filter"></i> Apply Filters
+      </button>
+      <button class="filter-btn reset" onclick="resetFilters()">
+        <i class="fas fa-undo"></i> Reset
+      </button>
+    </div>
+  </div>
+
+  <!-- Results Summary -->
+  <div class="results-summary" id="resultsSummary">
+    <div class="results-count">
+      Showing <span id="resultsCount">25</span> publications
+    </div>
+    <div class="active-filters" id="activeFilters">
+      <!-- Active filter tags will appear here -->
+    </div>
+  </div>
+
+  <!-- Publications List -->
+  <!-- 2026 Publications -->
+<li class="publication-item" data-year="2026" data-type="journal" data-venue="ieee tpel" data-authors="wang">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2026</span>
+  </div>
+  <div class="publication-title">Decoupled Space Vector Modulation Model and Maximum Modulation Index Analysis for Nine-Switch Converters</div>
+  <div class="publication-authors">Yi Wang, Hao Qin, Yan Deng, Abhishek Kumar, Jiande Wu, Ramesh C. Bansal, Raj M. Naidoo</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Power Electronics, vol. 41, no. 4</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/11222981/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2026" data-type="journal" data-venue="ieee tpel" data-authors="ye">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2026</span>
+  </div>
+  <div class="publication-title">Dual Phase-Shift Symmetrical SVM Strategy Optimized by Dual Modulation Indices for Single-Stage Isolated DC–AC Matrix Converter</div>
+  <div class="publication-authors">Guangcheng Ye, Hao Qin, Abhishek Kumar, Ramesh C. Bansal, Elena Gryazina, Yan Deng</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Power Electronics, vol. 41, no. 1</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/11154845/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2026" data-type="journal" data-venue="ieee tpel" data-authors="weng">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2026</span>
+  </div>
+  <div class="publication-title">Analysis and Optimization of Wireless Power and Information Dual Transfer in Multicoil System</div>
+  <div class="publication-authors">Wanying Weng, Jiande Wu, Long Qin, Hao Chen, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Power Electronics, vol. 41, no. 1</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/11134808/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<!-- 2025 Publications -->
+<li class="publication-item" data-year="2025" data-type="journal" data-authors="li, wu, kumar, zhou, sah, bansal">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2025</span>
+  </div>
+  <div class="publication-title">Three-Level Circulant Modulation With Submodule Capacitor Voltage Natural-Balance Capability for Bidirectional Modular DC-DC Converter</div>
+  <div class="publication-authors">G. Li, Q. Wu, A. Kumar, B. Zhou, B. Sah, R. C. Bansal, et al.</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Journal of Emerging and Selected Topics in Industrial Electronics, 2025</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/11311537" class="publication-link"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2025" data-type="book" data-authors="kumar, bansal, yan, kumar">
+  <div class="publication-header">
+    <span class="publication-type type-book">Book</span>
+    <span class="publication-year">2025</span>
+  </div>
+  <div class="publication-title">Microgrid Handbook: Planning to Practices</div>
+  <div class="publication-authors">A. Kumar, R. C. Bansal, D. Yan, P. Kumar</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> CRC Press, 2025</div>
+  <div class="publication-links">
+    <a href="https://doi.org/10.1201/9781003219439" class="publication-link"><i class="fas fa-external-link-alt"></i> Taylor & Francis Group</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2025" data-type="book" data-authors="kumar, kumar, he, bansal">
+  <div class="publication-header">
+    <span class="publication-type type-book">Book</span>
+    <span class="publication-year">2025</span>
+  </div>
+  <div class="publication-title">Handbook on New Paradigms in Smart Charging for E-Mobility: Global Trends, Policies and Practices</div>
+  <div class="publication-authors">Abhishek Kumar, P. Kumar, X. He, R. C. Bansal</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> Elsevier Inc, USA, ISBN: 978-0-323-95201-9 (2025)</div>
+  <div class="publication-links">
+    <a href="https://doi.org/10.1016/C2021-0-02934-5" class="publication-link"><i class="fas fa-external-link-alt"></i> Publisher</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2025" data-type="conference" data-venue="ieee" data-authors="wang">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2025</span>
+  </div>
+  <div class="publication-title">Space Vector Modulation for Three Phase Three-Load Twelve-Switch Inverters</div>
+  <div class="publication-authors">Yi Wang, Hao Qin, Yan Deng, Abhishek Kumar, Ramesh Bansal, BT Maharaj</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> IEEE Conference, 2025</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/11403637/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i>IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2025" data-type="conference" data-venue="ieee" data-authors="qin">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2025</span>
+  </div>
+  <div class="publication-title">A Unified Power Decoupling Control Strategy for Single-Phase Differential Boost/Buck-Boost Inverter</div>
+  <div class="publication-authors">Hao Qin, Liou Cai, Wenbo Zhu, Yan Deng, Abhishek Kumar, R. C. Bansal</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> IEEE Conference, 2025</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/11403055/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2025" data-type="conference" data-venue="ieee" data-authors="li">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2025</span>
+  </div>
+  <div class="publication-title">A Frequency-Adaptive Harmonic Current Suppression Strategy for Grid-Forming Inverters in Weak Grids</div>
+  <div class="publication-authors">Yao Li, Jinpeng Qu, Xiang Ou, Yan Deng, Abhishek Kumar, Bikash Sah</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> IEEE Conference, 2025</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/11403546/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2025" data-type="conference" data-venue="ieee" data-authors="zhu">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2025</span>
+  </div>
+  <div class="publication-title">An Improved Harmonic Detection Method Based on Multi-synchronous Rotating Frame with Mean Filtering</div>
+  <div class="publication-authors">Wenbo Zhu, Yao Li, Hao Qin, Yan Deng, Xiangning He, Ramesh Bansal</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> IEEE Conference, 2025</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/11403444/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2025" data-type="early access" data-venue="ieee" data-authors="li">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Early Access</span>
+    <span class="publication-year">2025</span>
+  </div>
+  <div class="publication-title">Three-Level Circulant Modulation With Submodule Capacitor Voltage Natural-Balance Capability for Bidirectional Modular DC-DC Converter</div>
+  <div class="publication-authors">Guangdi Li, Qizhen Wu, Abhishek Kumar, Bowen Zhou, Bikash Sah, Ramesh C. Bansal, Yan Deng</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Early Access</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/11311537/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2025" data-type="early access" data-venue="ieee tie" data-authors="li">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Early Access</span>
+    <span class="publication-year">2025</span>
+  </div>
+  <div class="publication-title">Embedding Power Line Communication in Modular Battery Equalizers via AC Bus for Distributed Battery Management</div>
+  <div class="publication-authors">Guoao Li, Keming Liu, Wanying Weng, Jiande Wu, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Industrial Electronics, Early Access</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/11293777/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2025" data-type="conference" data-venue="iecon" data-authors="li">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2025</span>
+  </div>
+  <div class="publication-title">A Hybrid Feedforward Harmonic Mitigation Strategy for Inverters under Islanded Operation</div>
+  <div class="publication-authors">Yao Li, Wenbo Zhu, Abhishek Kumar, R. C. Bansal, R. M. Naidoo, Yan Deng</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> IECON 2025</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/11221638/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2025" data-type="conference" data-venue="iecon" data-authors="weng">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2025</span>
+  </div>
+  <div class="publication-title">Simultaneous Wireless Power and Information Transfer with Minimal Hardware and Multi-Carrier Modulation Using Phase Shift Control</div>
+  <div class="publication-authors">Wanying Weng, Guoao Li, Zhecheng Zhang, Jiande Wu, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> IECON 2025</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/11221415/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2025" data-type="conference" data-venue="iecon" data-authors="qin">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2025</span>
+  </div>
+  <div class="publication-title">Pulse Train Control Strategy for Single-Phase Differential Boost Inverter Based on Discontinuous Modulation Strategy</div>
+  <div class="publication-authors">Hao Qin, Wenbo Zhu, Yi Wang, Yan Deng, Abhishek Kumar, R. C. Bansal</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> IECON 2025</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/11221954/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2025" data-type="conference" data-venue="iciea" data-authors="twala">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2025</span>
+  </div>
+  <div class="publication-title">Clustering community microgrids using explainable artificial intelligence for residential households</div>
+  <div class="publication-authors">Sakhile Twala, Raj Naidoo, Yan Deng, Ramesh Bansal, Guangdi Li, Jiande Wu</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> ICIEA 2025</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/11148479/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2025" data-type="conference" data-venue="iciea" data-authors="jia">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2025</span>
+  </div>
+  <div class="publication-title">Real-Time Estimation of Film Capacitor Lifespan in Modular Multilevel Converters</div>
+  <div class="publication-authors">Hefei Jia, Abhishek Kumar, Yan Deng, Jiande Wu, Ramesh C. Bansal, Raj M. Naidoo</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> ICIEA 2025</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/11148745/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2025" data-type="conference" data-venue="isie" data-authors="zhu">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2025</span>
+  </div>
+  <div class="publication-title">3D-SVM Method for Controlling Zero-Sequence Component in Three-Phase Four-Wire Three-Level Inverters</div>
+  <div class="publication-authors">Wenbo Zhu, Hao Qin, Abhishek Kumar, Jiande Wu, R. M. Naidoo, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> ISIE 2025</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/11124651/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2025" data-type="journal" data-venue="ieee jestpe" data-authors="li">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2025</span>
+  </div>
+  <div class="publication-title">Two-Level Phase Shift Circulant Modulation for Bidirectional Isolated Modular DC–DC Converter With Natural-Balance Capability</div>
+  <div class="publication-authors">Guangdi Li, Qizhen Wu, Zicheng Wang, Bowen Zhou, Yan Deng</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE JESTPE, vol. 13, no. 5</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/11124221/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2025" data-type="journal" data-venue="ieee tpel" data-authors="qin">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2025</span>
+  </div>
+  <div class="publication-title">A Dynamic Gain Modulation Scheme for Differential Inverters With Enhanced Harmonic Performance</div>
+  <div class="publication-authors">Hao Qin, Guangcheng Ye, Shiming Hu, Jiande Wu, Yan Deng, Abhishek Kumar</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Power Electronics, vol. 40, no. 10</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/11012697/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2025" data-type="journal" data-venue="ieee tps" data-authors="deng">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2025</span>
+  </div>
+  <div class="publication-title">Load Characteristic Analysis of Dielectric Barrier Discharge With Multineedle to Coaxial Cylindrical Configuration</div>
+  <div class="publication-authors">Zhaozhe Deng, Qi Qiu, Hefei Jia, Wenbo Zhu, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Plasma Science, vol. 53, no. 4</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/10932655/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<!-- 2024 Publications -->
+<li class="publication-item" data-year="2024" data-type="journal" data-authors="wang, li, tong, kumar, bansal, li, ma, he">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2024</span>
+  </div>
+  <div class="publication-title">A Fast Graph-Theory-Based Algorithm for Waveform Reconstruction and Loss Calculation in Voltage Source Converters</div>
+  <div class="publication-authors">Q. Wang, C. Li, N. Tong, Abhishek Kumar, R. C. Bansal, W. Li, H. Ma, X. He</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Journal of Emerging and Selected Topics in Power Electronics, pp. 1-1, 2024</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/10646347" class="publication-link"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2024" data-type="conference" data-venue="cpemc" data-authors="ye">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2024</span>
+  </div>
+  <div class="publication-title">Harmonic Current Correction for Common Mode Voltage Reduction and Narrow Pulse Elimination Method in DC-AC Matrix Converter</div>
+  <div class="publication-authors">Guangcheng Ye, Hao Qin, Abhishek Kumar, Bikash Sah, Raj M. Naidoo, Yan Deng</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> CPEMC 2024</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/10917182/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2024" data-type="journal" data-venue="ieee tie" data-authors="wu">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2024</span>
+  </div>
+  <div class="publication-title">SVPWM-Based Power Control Strategy for a Three-Port Four-Leg DC/AC Converter With Enhanced Power Transfer Mode</div>
+  <div class="publication-authors">Jingyuan Wu, Shiming Hu, Abhishek Kumar, Raj M. Naidoo, Yan Deng</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Industrial Electronics, vol. 71, no. 11</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/10491142/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2024" data-type="journal" data-venue="ieee jestpe" data-authors="liu">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2024</span>
+  </div>
+  <div class="publication-title">Power Flow Control Strategy Based on Space Vector Modulation of a Three-Port Converter</div>
+  <div class="publication-authors">Chang Liu, Shiming Hu, Yan Deng, Abhishek Kumar, Bikash Sah, Marco Jung</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE JESTPE, vol. 12, no. 3</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/10477496/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2024" data-type="journal" data-venue="ieee tie" data-authors="yang">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2024</span>
+  </div>
+  <div class="publication-title">Parallel Simulation for the Generalized Topology of Switched Capacitor Converter With Pillar-Connected-Double-Layer Structure</div>
+  <div class="publication-authors">Yuhang Yang, Ranyu Yao, Yi Wang, Yan Deng</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Industrial Electronics, vol. 71, no. 7</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/10236934/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<!-- 2023 Publications -->
+<li class="publication-item" data-year="2023" data-type="conference" data-venue="ieee" data-authors="yao">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2023</span>
+  </div>
+  <div class="publication-title">A Resonant Switched-Capacitor Converter with Step-Up/Down Capabilities Based on Extended Full-Range Regulation Method</div>
+  <div class="publication-authors">Ranyu Yao, Yuhang Yang, Dengke Zheng, Yan Deng</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> PEAS 2023</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/10395482/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2023" data-type="conference" data-venue="ieee" data-authors="hu">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2023</span>
+  </div>
+  <div class="publication-title">PT Control Strategy Based on Differential Boost Inverter</div>
+  <div class="publication-authors">Shiming Hu, Hao Qin, Jingyuan Wu, Yan Deng</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> PEAS 2023</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/10395021/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2023" data-type="conference" data-venue="ieee" data-authors="ye">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2023</span>
+  </div>
+  <div class="publication-title">A Modified Space Vector Modulation and Phase-Shifted Modulation Coordination Strategy for Isolated AC-DC Matrix Converter</div>
+  <div class="publication-authors">Guangcheng Ye, Abhishek Kumar, Yan Deng</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> PEAS 2023</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/10395749/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2023" data-type="conference" data-venue="ieee" data-authors="qin">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2023</span>
+  </div>
+  <div class="publication-title">A Voltage Control Strategy of Differential Buck-Boost Inverter Based on Third Harmonic Injection</div>
+  <div class="publication-authors">Hao Qin, Shiming Hu, Jinpeng Qu, Yan Deng</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> PEAS 2023</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/10395422/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2023" data-type="conference" data-venue="iecon" data-authors="wu">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2023</span>
+  </div>
+  <div class="publication-title">An SVPWM Strategy for Power Distribution in a Three-Phase Four-Leg Three-Port Inverter</div>
+  <div class="publication-authors">Jingyuan Wu, Guangcheng Ye, Shiming Hu, Yan Deng, R. C. Bansal, Huan Yang</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> IECON 2023</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/10312602/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2023" data-type="conference" data-venue="iecon" data-authors="hu">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2023</span>
+  </div>
+  <div class="publication-title">A Power Flow Control Strategy Based on Three Phase Differential Boost Inverter</div>
+  <div class="publication-authors">Shiming Hu, Hao Qin, Yi Wang, Yan Deng, Huan Yang, Raj M. Naidoo</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> IECON 2023</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/10311993/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2023" data-type="conference" data-venue="isie" data-authors="yang">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2023</span>
+  </div>
+  <div class="publication-title">Analysis and Modeling of Switched-Capacitor Converters with Parasitic Inductance</div>
+  <div class="publication-authors">Yuhang Yang, Dengke Zheng, Ranyu Yao, Yan Deng</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> ISIE 2023</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/10228105/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2023" data-type="journal" data-venue="ieee tpel" data-authors="deng">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2023</span>
+  </div>
+  <div class="publication-title">Nonlinear Resonance Characteristics Analysis of DBD Load Based on State Plane Trajectory</div>
+  <div class="publication-authors">Zhaozhe Deng, Xingliang Liu, Qi Qiu, Hefei Jia, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Power Electronics, vol. 38, no. 4</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/9983496/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2023" data-type="journal" data-venue="ieee tpwrd" data-authors="jia">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2023</span>
+  </div>
+  <div class="publication-title">Voltage Fluctuation Based Monitoring Scheme of Submodule Capacitors in Modular Multilevel Converter</div>
+  <div class="publication-authors">Hefei Jia, Zhaozhe Deng, Jinpeng Qu, Yan Deng</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Power Delivery, vol. 38, no. 3</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/9976293/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2023" data-type="journal" data-venue="ieee tie" data-authors="zhu">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2023</span>
+  </div>
+  <div class="publication-title">A Generalized Topology Synthesis for the Switched-Capacitor Converter</div>
+  <div class="publication-authors">Jihong Zhu, Yuhang Yang, Dengke Zheng, Yan Deng</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Industrial Electronics, vol. 70, no. 10</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/9967949/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2023" data-type="journal" data-venue="ieee tpel" data-authors="zheng">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2023</span>
+  </div>
+  <div class="publication-title">Medium Frequency Output Impedance Limits of Switched-Capacitor Circuits</div>
+  <div class="publication-authors">Dengke Zheng, Yuhang Yang, Shiming Hu, Yan Deng</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Power Electronics, vol. 38, no. 2</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/9916075/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2023" data-type="journal" data-venue="ieee jestpe" data-authors="jia">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2023</span>
+  </div>
+  <div class="publication-title">A Concurrent Diagnosis Method of IGBT Open-Circuit Faults in Modular Multilevel Converters</div>
+  <div class="publication-authors">Hefei Jia, Yan Deng, Xue Hu, Zhaozhe Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE JESTPE, vol. 11, no. 1</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/9899437/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2023" data-type="journal" data-venue="ieee tie" data-authors="hu">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2023</span>
+  </div>
+  <div class="publication-title">An Open-Circuit Faults Diagnosis Method for MMC Based on Extreme Gradient Boosting</div>
+  <div class="publication-authors">Xue Hu, Hefei Jia, Yuedong Zhang, Yan Deng</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Industrial Electronics, vol. 70, no. 6</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/9849436/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<!-- 2022 Publications -->
+<li class="publication-item" data-year="2022" data-type="book-chapter" data-authors="kumar, singh, meena, deng">
+  <div class="publication-header">
+    <span class="publication-type type-book">Book Chapter</span>
+    <span class="publication-year">2022</span>
+  </div>
+  <div class="publication-title">Design and Evaluation of Microgrids based on Renewable Energy Technologies with a Perspective of Sustainable Development</div>
+  <div class="publication-authors">Abhishek Kumar, A. R. Singh, N.K. Meena, Y. Deng, X. He, P. Kumar, R. C. Bansal</div>
+  <div class="publication-venue"><i class="fas fa-book-open"></i> Handbook of Renewable Energy Technology & Systems, pp. 385-415, WORLD SCIENTIFIC Publishers, Singapore, 2022</div>
+  <div class="publication-links">
+    <a href="https://doi.org/10.1142/9781786349033_0014" class="publication-link"><i class="fas fa-external-link-alt"></i> Publisher</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2022" data-type="conference" data-venue="peac" data-authors="jia">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2022</span>
+  </div>
+  <div class="publication-title">An Applicable Submodule Capacitor Monitoring Scheme for Modular Multilevel Converters</div>
+  <div class="publication-authors">Hefei Jia, Yan Deng, Zhaozhe Deng, Jinpeng Qu</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> PEAC 2022</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/9959475/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2022" data-type="conference" data-venue="isie" data-authors="zheng">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2022</span>
+  </div>
+  <div class="publication-title">Analysis and Modeling of Switched-Capacitor Converters Using Q-U Curves</div>
+  <div class="publication-authors">Dengke Zheng, Jihong Zhu, Yuhang Yang, Yan Deng</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> ISIE 2022</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/9831732/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<!-- 2021 Publications -->
+<li class="publication-item" data-year="2021" data-type="conference" data-venue="ieee" data-authors="hu">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2021</span>
+  </div>
+  <div class="publication-title">An Open Circuit Faults Diagnosis Method Based on XG-Boost Used in MMC</div>
+  <div class="publication-authors">Xue Hu, Hefei Jia, Yan Deng</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> POWERCON 2021</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/9697684/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2021" data-type="conference" data-venue="peas" data-authors="wu">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2021</span>
+  </div>
+  <div class="publication-title">Splicing Sinusoidal Overmodulation Technique Used in Three-phase NPC Five-level Inverters</div>
+  <div class="publication-authors">Yutao Wu, Hefei Jia, Yan Deng</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> PEAS 2021</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/9628551/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2021" data-type="conference" data-venue="isie" data-authors="kumar">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2021</span>
+  </div>
+  <div class="publication-title">A Rural Microgrid Based on Hydrokinetic Energy System for Rough Topographies</div>
+  <div class="publication-authors">Abhishek Kumar, Yan Deng, Xiangning He, Praveen Kumar, R. C. Bansal</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> ISIE 2021</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/9576377/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2021" data-type="conference" data-venue="isie" data-authors="wang">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2021</span>
+  </div>
+  <div class="publication-title">Small-Signal Modeling and Control of a Boost Integrated LLC Resonant Converter</div>
+  <div class="publication-authors">Jicheng Wang, Licheng Bao, Yan Deng</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> ISIE 2021</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/9576307/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2021" data-type="conference" data-venue="isie" data-authors="zhu">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2021</span>
+  </div>
+  <div class="publication-title">A Capacitor Voltage Regulation Method for Non-redundant Cascaded H-bridge Converters</div>
+  <div class="publication-authors">Jihong Zhu, Chang Liu, Yan Deng</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> ISIE 2021</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/9576409/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2021" data-type="conference" data-venue="sest" data-authors="kumar">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2021</span>
+  </div>
+  <div class="publication-title">A Renewable based Nano-grid for Smart Rural Residential Application</div>
+  <div class="publication-authors">Abhishek Kumar, Yan Deng, Xiangning He, Praveen Kumar, R. C. Bansal, R. M. Naidoo</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> SEST 2021</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/9543306/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<!-- 2020 Publications -->
+<li class="publication-item" data-year="2020" data-type="book-chapter" data-authors="kumar, sah, singh, deng">
+  <div class="publication-header">
+    <span class="publication-type type-book">Book Chapter</span>
+    <span class="publication-year">2020</span>
+  </div>
+  <div class="publication-title">Multicriteria Decision-Making Methodologies and Their Applications in Sustainable Energy System/Microgrids</div>
+  <div class="publication-authors">Abhishek Kumar, B. Sah, A. R. Singh, Yan Deng, Xiangning He, Praveen Kumar, R.C. Bansal</div>
+  <div class="publication-venue"><i class="fas fa-book-open"></i> Decision Making Applications in Modern Power Systems, pp. 1-40, Academic Press, 2020</div>
+  <div class="publication-links">
+    <a href="https://doi.org/10.1016/B978-0-12-816445-7.00001-3" class="publication-link"><i class="fas fa-external-link-alt"></i> Publisher</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2020" data-type="book-chapter" data-authors="singh, lei, kumar, singh, meena">
+  <div class="publication-header">
+    <span class="publication-type type-book">Book Chapter</span>
+    <span class="publication-year">2020</span>
+  </div>
+  <div class="publication-title">Microgrid System</div>
+  <div class="publication-authors">A. R. Singh, Lei D., Abhishek Kumar, R. Singh, N.K. Meena</div>
+  <div class="publication-venue"><i class="fas fa-book-open"></i> Microgrid: Operation, Control, Monitoring and Protection. Lecture Notes in Electrical Engineering, vol 625, Springer, Singapore, 2020</div>
+  <div class="publication-links">
+    <a href="https://doi.org/10.1007/978-981-15-1781-5_1" class="publication-link"><i class="fas fa-external-link-alt"></i> Springer</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2020" data-type="book-chapter" data-authors="singh, singh, kumar, naidoo, bansal">
+  <div class="publication-header">
+    <span class="publication-type type-book">Book Chapter</span>
+    <span class="publication-year">2020</span>
+  </div>
+  <div class="publication-title">7| Bus-Bar Protection</div>
+  <div class="publication-authors">AR Singh, R Singh, Abhishek Kumar, R Naidoo, R Bansal</div>
+  <div class="publication-venue"><i class="fas fa-book-open"></i> Power System Protection in Smart Grid Environment, CRC Press, Taylor and Francis Group</div>
+  <div class="publication-links">
+    <a href="https://www.taylorfrancis.com/chapters/edit/10.1201/9780429401756-7/bus-bar-protection-arvind-singh-ranjay-singh-abhishek-kumar-raj-naidoo-ramesh-bansal" class="publication-link"><i class="fas fa-external-link-alt"></i> CRC Press</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2020" data-type="conference" data-venue="ipemc" data-authors="liu">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2020</span>
+  </div>
+  <div class="publication-title">A Space Vector Modulation Strategy for Maximum Port Power Distribution Range in a Three-Port Three-Phase Converter</div>
+  <div class="publication-authors">Chang Liu, Jie Ruan, Guangdi Li, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> IPEMC 2020</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/9368055/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2020" data-type="conference" data-venue="ispec" data-authors="xu">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2020</span>
+  </div>
+  <div class="publication-title">Assessment and Quantify the Impact of Different Data Flow Control Methods on Digital Substation Communication Network</div>
+  <div class="publication-authors">Luoyun Xu, Haiyu Li, Zhongping Zhang, Yuhao Zhou, Haizhou Huang, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> iSPEC 2020</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/9351109/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2020" data-type="conference" data-venue="ei2" data-authors="xu">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2020</span>
+  </div>
+  <div class="publication-title">Performance Testing and Analysis of Multi-vendor IEDs under PRP Configuration</div>
+  <div class="publication-authors">Luoyun Xu, Haiyu Li, Zhongping Zhang, Yuhao Zhou, Haizhou Huang, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> EI2 2020</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/9346647/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2020" data-type="journal" data-venue="ieee access" data-authors="liu">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2020</span>
+  </div>
+  <div class="publication-title">Analytical Estimation Method of Winding Parasitic Capacitance for High-Frequency High-Voltage Application</div>
+  <div class="publication-authors">Xingliang Liu, Zhaozhe Deng, Qi Qiu, Ruoyu Wang, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Access, vol. 8</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/9063419/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2020" data-type="journal" data-venue="ieee tpel" data-authors="wang">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2020</span>
+  </div>
+  <div class="publication-title">Online Capacitance Estimation of Submodule Capacitors for Modular Multilevel Converter With Nearest Level Modulation</div>
+  <div class="publication-authors">Kun Wang, Lin Jin, Guangdi Li, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Power Electronics, vol. 35, no. 7</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/8930979/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2020" data-type="journal" data-venue="ieee tie" data-authors="li">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2020</span>
+  </div>
+  <div class="publication-title">An Interleaved Three-Phase PWM Single-Stage Resonant Rectifier With High-Frequency Isolation</div>
+  <div class="publication-authors">Guangdi Li, Jie Ruan, Kun Wang, Yan Deng, Xiangning He, Yousheng Wang</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Industrial Electronics, vol. 67, no. 8</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/8825815/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2020" data-type="journal" data-venue="ieee jestpe" data-authors="li">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2020</span>
+  </div>
+  <div class="publication-title">A Single-Stage Interleaved Resonant Bridgeless Boost Rectifier with High-Frequency Isolation</div>
+  <div class="publication-authors">Guangdi Li, Jin Xia, Kun Wang, Yan Deng, Xiangning He, Yousheng Wang</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE JESTPE, vol. 8, no. 2</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/8695060/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+<!-- 2019 Publications -->
+<li class="publication-item" data-year="2019" data-type="journal" data-authors="singh, kumar, singh, naidoo, bansal, kumar">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2019</span>
+  </div>
+  <div class="publication-title">Environmental Feasibility of Incorporation of Electric Taxis in South Africa</div>
+  <div class="publication-authors">R Singh, Abhishek Kumar, A.R. Singh, R. Naidoo, R.C. Bansal, P. Kumar</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> The Journal of Engineering, 2019(18), pp. 5078-5084</div>
+  <div class="publication-links">
+    <a href="https://doi.org/10.1049/joe.2018.9259" class="publication-link"><i class="fas fa-external-link-alt"></i> IET Digital Library</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2019" data-type="conference" data-venue="ieee" data-authors="wang">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2019</span>
+  </div>
+  <div class="publication-title">Submodule Fault Detection and Location Method for Modular Multilevel Converter Based on the Voltage Variation Observations</div>
+  <div class="publication-authors">Kun Wang, Lin Jin, Guangdi Li, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> APPEEC 2019</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/8994401/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2019" data-type="conference" data-venue="ieee" data-authors="xu">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2019</span>
+  </div>
+  <div class="publication-title">Isolated Multi-port DC-DC Converter-Based on Bifurcate MMC Structure</div>
+  <div class="publication-authors">Yingfei Xu, Kun Wang, Lin Jin, Yan Deng, Yi Lu, Yong Yang</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> APPEEC 2019</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/8994701/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2019" data-type="conference" data-authors="singh, ding, kumar, kheshti, singh, bansal">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2019</span>
+  </div>
+  <div class="publication-title">Isolated Microgrid Voltage Regulation Using Fuzzy-Logic Based Inverter Control</div>
+  <div class="publication-authors">Arvind R Singh, Lei Ding, Abhishek Kumar, Mostafa Kheshti, Ranjay Singh, Ramesh Bansal</div>
+  <div class="publication-venue"><i class="fas fa-chalkboard"></i> 8th International Conference on Renewable Power Generation, 24-25 Oct. 2019, pp. 1-5, Shanghai, China</div>
+  <div class="publication-links">
+    <a href="https://doi.org/10.1049/cp.2019.0529" class="publication-link"><i class="fas fa-external-link-alt"></i> IET Digital Library</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2019" data-type="conference" data-venue="ieee" data-authors="ruan">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2019</span>
+  </div>
+  <div class="publication-title">A Flexible Power Distribution Modulation Strategy for Single-Phase Dual-Input Inverter</div>
+  <div class="publication-authors">Jie Ruan, Chang Liu, Guangdi Li, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> APPEEC 2019</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/8994645/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2019" data-type="conference" data-venue="iecon" data-authors="bao">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2019</span>
+  </div>
+  <div class="publication-title">An Improved Three-Phase Four-Wire Harmonic Detection Algorithm Based on Multi-Synchronous Rotating Frame Transformation</div>
+  <div class="publication-authors">Licheng Bao, Jin Xia, Zhiauan Dong, Yan Deng, Yi Lu, Yong Yang</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> IECON 2019</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/8927561/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2019" data-type="conference" data-venue="iecon" data-authors="liu">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2019</span>
+  </div>
+  <div class="publication-title">A Vector Control Strategy for a Multi-Port Bidirectional DC/AC Converter With Emphasis on Power Distribution Between DC Sources</div>
+  <div class="publication-authors">Chang Liu, Chenhang Xu, Jie Ruan, Lin Jin, Licheng Bao, Yan Deng</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> IECON 2019</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/8927266/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2019" data-type="conference" data-venue="ecce" data-authors="jin">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2019</span>
+  </div>
+  <div class="publication-title">Operation Range Analysis and Capacitor Voltage Regulation of A Dual-AC-Terminal MMC based on Bifurcated-Arm Topology</div>
+  <div class="publication-authors">Lin Jin, Zhiquan Dong, Yan Deng, Leyuan Zhou, Yi Lu, Yong Yang</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> ECCE 2019</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/8912194/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2019" data-type="conference" data-venue="ecce" data-authors="lin">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2019</span>
+  </div>
+  <div class="publication-title">Differential Power Processing Architecture with Virtual Port in Series and MPPT in Submodule Level</div>
+  <div class="publication-authors">Lyuyi Lin, Junming Zhang, Yan Deng</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> ECCE 2019</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/8913106/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2019" data-type="journal" data-venue="ieee access" data-authors="wang">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2019</span>
+  </div>
+  <div class="publication-title">Switching State Sequences-Based Modulation Scheme for T-Type 5L-ANPC Converter</div>
+  <div class="publication-authors">Kun Wang, Yingfei Xu, Guangdi Li, Yan Deng, Xiangning He, Yi Lu, Yong Yang</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Access, vol. 7</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/8772039/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2019" data-type="journal" data-venue="ieee jestpe" data-authors="li">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2019</span>
+  </div>
+  <div class="publication-title">Hybrid Modulation of Parallel-Series LLC Resonant Converter and Phase Shift Full-Bridge Converter for a Dual-Output DC–DC Converter</div>
+  <div class="publication-authors">Guangdi Li, Jin Xia, Kun Wang, Yan Deng, Xiangning He, Yousheng Wang</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE JESTPE, vol. 7, no. 2</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/8648376/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2019" data-type="journal" data-venue="ieee tpel" data-authors="chen">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2019</span>
+  </div>
+  <div class="publication-title">Topology-Reconfigurable Fault-Tolerant LLC Converter With High Reliability and Low Cost for More Electric Aircraft</div>
+  <div class="publication-authors">Guipeng Chen, Luan Chen, Yan Deng, Kun Wang, Xinlin Qing</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Power Electronics, vol. 34, no. 3</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/8387453/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2019" data-type="journal" data-venue="ieee tie" data-authors="wang">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2019</span>
+  </div>
+  <div class="publication-title">An Improved CPS-PWM Scheme-Based Voltage Balancing Strategy for MMC With Fundamental Frequency Sorting Algorithm</div>
+  <div class="publication-authors">Kun Wang, Yan Deng, Hao Peng, Guipeng Chen, Guangdi Li, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Industrial Electronics, vol. 66, no. 3</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/8310544/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<!-- 2018 Publications -->
+<li class="publication-item" data-year="2018" data-type="journal" data-authors="dhenuvakonda, singh, thakre, umre, kumar, bansal">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2018</span>
+  </div>
+  <div class="publication-title">Effect of SSSC-Based SSR Controller on the Performance of Distance Relay and Adaptive Approach Using Synchronized Measurement</div>
+  <div class="publication-authors">Koteswara Raju Dhenuvakonda, Arvind R. Singh, Mohan P. Thakre, Bhimrao S. Umre, Abhishek Kumar, Ramesh C. Bansal</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> International Transactions on Electrical Energy Systems, Wiley Online Library, Vol. 28, pp. 1-18, 2018</div>
+  <div class="publication-links">
+    <a href="https://doi.org/10.1002/etep.2620" class="publication-link"><i class="fas fa-external-link-alt"></i> Wiley</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2018" data-type="conference" data-authors="singh, kumar, singh, naidoo, bansal, kumar">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2018</span>
+  </div>
+  <div class="publication-title">Environmental Feasibility of Incorporation of Electric Taxis in South Africa</div>
+  <div class="publication-authors">Ranjay Singh, Abhishek Kumar, Arvind R. Singh, Raj Naidoo, R. C. Bansal, Praveen Kumar</div>
+  <div class="publication-venue"><i class="fas fa-chalkboard"></i> 7th International Conference on Renewable Power Generation, 26-27 September 2018, pp. 1-7, DTU, Lyngby, Copenhagen, Denmark</div>
+  <div class="publication-links">
+    <a href="https://doi.org/10.1049/joe.2018.9259" class="publication-link"><i class="fas fa-external-link-alt"></i> IET Digital Library</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2018" data-type="conference" data-authors="meena, kumar, singh, swarnkar, gupta, niazi, kumar, bansal">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2018</span>
+  </div>
+  <div class="publication-title">Optimal Planning of Hybrid Energy Conversion Systems for Annual Energy Cost Minimization in Indian Residential Buildings</div>
+  <div class="publication-authors">Nand K. Meena, Abhishek Kumar, Arvind R. Singh, Anil Swarnkar, Nikhil Gupta, K R Niazi, Praveen Kumar, Ramesh Bansal</div>
+  <div class="publication-venue"><i class="fas fa-chalkboard"></i> 10th International Conference on Applied Energy (ICAE2018), 22-25 August 2018, pp. 1-6, Hong Kong, China</div>
+  <div class="publication-links">
+    <a href="https://doi.org/10.1016/j.egypro.2019.01.965" class="publication-link"><i class="fas fa-external-link-alt"></i> Publisher</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2018" data-type="conference" data-venue="peac" data-authors="zhou">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2018</span>
+  </div>
+  <div class="publication-title">Convergence Speed Analysis of Capacitor Voltage Balancing Strategy for MMC with Logic Processed CPS-PWM Scheme</div>
+  <div class="publication-authors">Leyuan Zhou, Kun Wang, Yan Deng, Yi Lu, Chaoliang Wang, Feng Xu</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> PEAC 2018</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/8590429/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2018" data-type="conference" data-venue="ecce" data-authors="chen">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2018</span>
+  </div>
+  <div class="publication-title">An Enhanced Fault-Tolerant DC-DC Converter with Redundant Circuit and Topology Reconstruction</div>
+  <div class="publication-authors">Guipeng Chen, Luan Chen, Zhufeng Jin, Yan Deng, Xinlin Qing, Lantao Huang</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> ECCE 2018</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/8557930/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2018" data-type="conference" data-venue="ecce" data-authors="xia">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2018</span>
+  </div>
+  <div class="publication-title">Modeling and Stability Analysis of Paralleled Current-Controlled Three-Phase Inverters with LCL Filter</div>
+  <div class="publication-authors">Jin Xia, Bo Que, Guangdi Li, Chao Chen, Yan Deng</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> ECCE 2018</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/8557961/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2018" data-type="conference" data-venue="compel" data-authors="li">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2018</span>
+  </div>
+  <div class="publication-title">Advantages for embedding DC-link decoupling capacitance in high capacity power electronic converters</div>
+  <div class="publication-authors">Guangzhuo Li, Jie Ruan, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> COMPEL 2018</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/8459925/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2018" data-type="journal" data-venue="ieee access" data-authors="kumar">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2018</span>
+  </div>
+  <div class="publication-title">Multiyear Load Growth Based Techno-Financial Evaluation of a Microgrid for an Academic Institution</div>
+  <div class="publication-authors">Abhishek Kumar, Arvind R. Singh, Yan Deng, Xiangning He, Praveen Kumar, Ramesh C. Bansal</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Access, vol. 6</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/8391710/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2018" data-type="journal" data-venue="ieee access" data-authors="kumar">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2018</span>
+  </div>
+  <div class="publication-title">A Novel Methodological Framework for the Design of Sustainable Rural Microgrid for Developing Nations</div>
+  <div class="publication-authors">Abhishek Kumar, Arvind R. Singh, Yan Deng, Xiangning He, Praveen Kumar, Ramesh C. Bansal</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Access, vol. 6</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/8353412/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2018" data-type="journal" data-venue="ieee tie" data-authors="chen">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2018</span>
+  </div>
+  <div class="publication-title">Principle and Topology Synthesis of Integrated Single-Input Dual-Output and Dual-Input Single-Output DC–DC Converters</div>
+  <div class="publication-authors">Guipeng Chen, Zhufeng Jin, Yan Deng, Xiangning He, Xinlin Qing</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Industrial Electronics, vol. 65, no. 5</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/8060590/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<!-- 2017 Publications -->
+<li class="publication-item" data-year="2017" data-type="journal" data-authors="kumar, sah, singh, deng, he, kumar, bansal">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2017</span>
+  </div>
+  <div class="publication-title">A Review of Multi Criteria Decision Making (MCDM) Towards Sustainable Renewable Energy Development</div>
+  <div class="publication-authors">Abhishek Kumar, Bikash Sah, Arvind R. Singh, Yan Deng, Xiangning He, Praveen Kumar, R.C. Bansal</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> Renewable & Sustainable Energy Reviews, Vol. 69, pp. 596-609, March 2017</div>
+  <div class="publication-links">
+    <a href="https://doi.org/10.1016/j.rser.2016.11.191" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> Publisher</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2017" data-type="conference" data-venue="spec" data-authors="li">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2017</span>
+  </div>
+  <div class="publication-title">An integrated AC-DC converter with isolation and reduced number of power components</div>
+  <div class="publication-authors">Guangdi Li, Yun Lei, Yan Deng, Kun Wang, Xiangning He, Yousheng Wang</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> SPEC 2017</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/8333552/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2017" data-type="journal" data-venue="ieee tcas" data-authors="chen">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2017</span>
+  </div>
+  <div class="publication-title">Topology Derivation and Analysis of Integrated Multiple Output Isolated DC–DC Converters With Stacked Configuration for Low-Cost Applications</div>
+  <div class="publication-authors">Guipeng Chen, Yan Deng, Kun Wang, Yihua Hu, Lin Jiang, Huiqing Wen, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Circuits and Systems I, vol. 64, no. 8</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/7907199/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2017" data-type="journal" data-venue="ieee tie" data-authors="chen">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2017</span>
+  </div>
+  <div class="publication-title">A Family of Zero-Voltage-Switching Magnetic Coupling Nonisolated Bidirectional DC–DC Converters</div>
+  <div class="publication-authors">Guipeng Chen, Yan Deng, Luan Chen, Yihua Hu, Lin Jiang, Xiangning He, Yousheng Wang</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Industrial Electronics, vol. 64, no. 8</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/7878540/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2017" data-type="journal" data-venue="ieee tvT" data-authors="chen">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2017</span>
+  </div>
+  <div class="publication-title">Integrated Multiple-Output Synchronous Buck Converter for Electric Vehicle Power Supply</div>
+  <div class="publication-authors">Guipeng Chen, Yan Deng, Jie Dong, Yihua Hu, Lin Jiang, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Vehicular Technology, vol. 66, no. 7</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/7756340/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2017" data-type="journal" data-venue="ieee tie" data-authors="deng">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2017</span>
+  </div>
+  <div class="publication-title">Enhanced Power Flow Control for Grid-Connected Droop-Controlled Inverters With Improved Stability</div>
+  <div class="publication-authors">Yan Deng, Yong Tao, Guipeng Chen, Guangdi Li, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Industrial Electronics, vol. 64, no. 7</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/7560602/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<!-- 2016 Publications -->
+<li class="publication-item" data-year="2016" data-type="journal" data-authors="chen, dong, deng, tao, he, wang">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2016</span>
+  </div>
+  <div class="publication-title">A Family of Magnetic Coupling DC-DC Converters With Zero-Voltage-Switching Over Wide Input Voltage Range and Load Variation</div>
+  <div class="publication-authors">Guipeng Chen, Jie Dong, Yan Deng, Yong Tao, Xiangning He, Yousheng Wang</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> Journal of Power Electronics, Vol. 16, No. 5, September 2016</div>
+  <div class="publication-links">
+    <a href=https://doi.org/10.6113/JPE.2016.16.5.1639" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> Publisher</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2016" data-type="journal" data-authors="chen, deng, he, wang, zhang">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2016</span>
+  </div>
+  <div class="publication-title">Zero-Voltage-Switching Buck Converter with Low-Voltage Stress Using Coupled Inductor</div>
+  <div class="publication-authors">Guipeng Chen, Yan Deng, Xiangning He, Yousheng Wang, Jiangfeng Zhang</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IET Power Electronics, March 2016</div>
+  <div class="publication-links">
+    <a href="https://doi.org/10.1049/iet-pel.2015.0267" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IET Digital Library</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2016" data-type="journal" data-authors="tao, deng, li, chen, he">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2016</span>
+  </div>
+  <div class="publication-title">Evaluation and Comparison of the Low-Frequency Oscillation Damping Methods for the Droop-Controlled Inverters in Distributed Generation Systems</div>
+  <div class="publication-authors">Yong Tao, Yan Deng, Guangdi Li, Guipeng Chen, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> Journal of Power Electronics, Vol. 16, No. 2, pp. 731-747, March 2016</div>
+  <div class="publication-links">
+    <a href="https://doi.org/10.6113/JPE.2016.16.2.731" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> Publisher</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2016" data-type="conference" data-venue="spec" data-authors="jin">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2016</span>
+  </div>
+  <div class="publication-title">Hold-up time extension method for forward converter</div>
+  <div class="publication-authors">Xiaoguang Jin, Huipin Lin, Wenxi Yao, Yan Deng, Zhengyu Lyu, Bin Qian</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> SPEC 2016</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/7846092/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2016" data-type="conference" data-venue="spec" data-authors="yu">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2016</span>
+  </div>
+  <div class="publication-title">H-bridge floating capacitor voltage stability conditions analysis based on a modified hybrid multilevel converter</div>
+  <div class="publication-authors">Hanyang Yu, Wenxi Yao, Zhengyu Lyu, Yan Deng, Bin Chen</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> SPEC 2016</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/7846001/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2016" data-type="conference" data-venue="spec" data-authors="lin">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2016</span>
+  </div>
+  <div class="publication-title">A vary mode control-based high-efficiency full-bridge LLC resonant converter operating in super wide input voltage range</div>
+  <div class="publication-authors">Huipin Lin, Xiaoguang Jin, Wenxi Yao, Zhengyu Lyu, Yan Deng, Xinnian Sun</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> SPEC 2016</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/7846047/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2016" data-type="conference" data-venue="iecon" data-authors="kumar">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2016</span>
+  </div>
+  <div class="publication-title">A Multi Criteria Decision based rural electrification system</div>
+  <div class="publication-authors">Abhishek Kumar, Yan Deng, Xiangning He, Praveen Kumar</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> IECON 2016</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/7793640/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2016" data-type="conference" data-venue="ipemc" data-authors="dong">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2016</span>
+  </div>
+  <div class="publication-title">A family of integrated dual-output DC-DC converters: Synthesis methodology and performance analysis</div>
+  <div class="publication-authors">Jie Dong, Guipeng Chen, Yan Deng, Kun Wang, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> IPEMC-ECCE Asia 2016</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/7512310/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2016" data-type="conference" data-venue="apec" data-authors="wang">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2016</span>
+  </div>
+  <div class="publication-title">Fundamental frequency sorting strategy for capacitor voltage balance of modular multilevel converters with phase disposition PWM</div>
+  <div class="publication-authors">Kun Wang, Yan Deng, Wenyu Li, Hao Peng, Guipeng Chen, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> APEC 2016</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/7468059/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2016" data-type="journal" data-venue="ieee tie" data-authors="chen">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2016</span>
+  </div>
+  <div class="publication-title">Topology Derivation and Generalized Analysis of Zero-Voltage-Switching Synchronous DC–DC Converters With Coupled Inductors</div>
+  <div class="publication-authors">Guipeng Chen, Yan Deng, Yong Tao, Xiangning He, Yousheng Wang, Yihua Hu</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Industrial Electronics, vol. 63, no. 8</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/7445178/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2016" data-type="journal" data-venue="ieee tpel" data-authors="hao">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2016</span>
+  </div>
+  <div class="publication-title">Energy Compression of Dielectric Barrier Discharge With Third Harmonic Circulating Current in Current-Fed Parallel-Series Resonant Converter</div>
+  <div class="publication-authors">Shiqiang Hao, Xingliang Liu, Wuhua Li, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Power Electronics, vol. 31, no. 12</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/7390078/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2016" data-type="journal" data-venue="ieee tpel" data-authors="peng">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2016</span>
+  </div>
+  <div class="publication-title">A Capacitor Voltage Balancing Method With Fundamental Sorting Frequency for Modular Multilevel Converters Under Staircase Modulation</div>
+  <div class="publication-authors">Hao Peng, Rui Xie, Kun Wang, Yan Deng, Xiangning He, Rongxiang Zhao</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Power Electronics, vol. 31, no. 11</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/7378286/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2016" data-type="journal" data-venue="ieee tpel" data-authors="zong">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2016</span>
+  </div>
+  <div class="publication-title">Asymmetrical Duty Cycle-Controlled LLC Resonant Converter With Equivalent Switching Frequency Doubler</div>
+  <div class="publication-authors">Sheng Zong, Haoze Luo, Wuhua Li, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Power Electronics, vol. 31, no. 7</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/7272117/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<!-- 2015 Publications -->
+<li class="publication-item" data-year="2015" data-type="conference" data-venue="ecce" data-authors="chen">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2015</span>
+  </div>
+  <div class="publication-title">A novel hybrid ZVZCS full-bridge converter suitable for wide input voltage range</div>
+  <div class="publication-authors">Guipeng Chen, Yan Deng, Jie Dong, Xiangning He, Yousheng Wang</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> ECCE 2015</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/7309870/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2015" data-type="conference" data-venue="ecce" data-authors="chen">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2015</span>
+  </div>
+  <div class="publication-title">Integrated dual-output synchronous DC-DC buck converter</div>
+  <div class="publication-authors">Guipeng Chen, Jie Dong, Yan Deng, Xiangning He, Yousheng Wang</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> ECCE 2015</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/7309875/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2015" data-type="journal" data-venue="ieee tie" data-authors="deng">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2015</span>
+  </div>
+  <div class="publication-title">An Isolated High-Frequency DC–AC Converter Based on Differential Structure With Ultralow Distortion Output Voltage</div>
+  <div class="publication-authors">Yan Deng, Zibo Lv, Hao Peng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Industrial Electronics, vol. 62, no. 12</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/7165638/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2015" data-type="journal" data-venue="ieee tpel" data-authors="tao">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2015</span>
+  </div>
+  <div class="publication-title">Analysis and Mitigation of Inverter Output Impedance Impacts for Distributed Energy Resource Interface</div>
+  <div class="publication-authors">Yong Tao, Quanwei Liu, Yan Deng, Xunhao Liu, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Power Electronics, vol. 30, no. 7</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/6863702/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2015" data-type="journal" data-venue="ieee tpel" data-authors="li">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2015</span>
+  </div>
+  <div class="publication-title">Modular Multilevel DC/DC Converters With Phase-Shift Control Scheme for High-Voltage DC-Based Systems</div>
+  <div class="publication-authors">Wuhua Li, Qun Jiang, Ye Mei, Chushan Li, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Power Electronics, vol. 30, no. 1</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/6718123/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<!-- 2014 Publications -->
+<li class="publication-item" data-year="2014" data-type="journal" data-authors="peng, wang, wang, deng, he, zhao">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2014</span>
+  </div>
+  <div class="publication-title">A Simple Capacitor Voltage Balancing Method with a Fundamental Sorting Frequency for Modular Multilevel Converters</div>
+  <div class="publication-authors">Hao Peng, Ying Wang, Kun Wang, Yan Deng, Xiangning He, Rongxiang Zhao</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> Journal of Power Electronics, Vol. 14, No. 6, pp. 1109-1118, November 2014</div>
+  <div class="publication-links">
+    <a href="https://doi.org/10.6113/JPE.2014.14.6.1109" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> Publisher</a>
+  </div>
+</li>
+
+<!-- 2014 (August) -->
+<li class="publication-item" data-year="2014" data-type="journal" data-authors="hu, deng, long, lu">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2014</span>
+  </div>
+  <div class="publication-title">High Step-Up Passive Absorption Circuit Used in Non-Isolated High Step-Up Converter</div>
+  <div class="publication-authors">Yihua Hu, Yan Deng, Jiangtao Long, Xiaoxun Lu</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IET Power Electronics, Volume 7, Issue 8, August 2014</div>
+  <div class="publication-links">
+    <a href="https://doi.org/10.1049/iet-pel.2013.0003" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IET Digital Library</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2014" data-type="journal" data-authors="liu, tao, liu, deng, he">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2014</span>
+  </div>
+  <div class="publication-title">Voltage Unbalance and Harmonics Compensation for Islanded Microgrid Inverters</div>
+  <div class="publication-authors">Quanwei Liu, Yong Tao, Xunhao Liu, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IET Power Electronics, Volume 7, Issue 5, May 2014</div>
+  <div class="publication-links">
+    <a href="https://doi.org/10.1049/iet-pel.2013.0410" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IET Digital Library</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2014" data-type="conference" data-authors="kumar, bam, sah, kumar">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2014</span>
+  </div>
+  <div class="publication-title">A Hybrid Micro Grid for Remote Village in Himalayas</div>
+  <div class="publication-authors">Abhishek Kumar, Gomar Bam, Bikash Sah, Praveen Kumar</div>
+  <div class="publication-venue"><i class="fas fa-chalkboard"></i> IET Renewable Power Generation Conference (RPG 2014), pp. 1-6</div>
+  <div class="publication-links">
+    <a href="https://doi.org/10.1049/cp.2014.0928" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> Publisher</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2014" data-type="conference" data-venue="iecon" data-authors="chen">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2014</span>
+  </div>
+  <div class="publication-title">An optimized modulation method tor full-bridge/push-pull bi-directional DC-DC converter with wide-range ZVS and reduced spike voltage</div>
+  <div class="publication-authors">Guipeng Chen, Yan Deng, Hao Peng, Xiangning He, Yousheng Wang</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> IECON 2014</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/7048662/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2014" data-type="conference" data-venue="ecce" data-authors="lv">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2014</span>
+  </div>
+  <div class="publication-title">A high frequency transformer isolated inverter expecting no duty cycle loss</div>
+  <div class="publication-authors">Zibo Lv, Yan Deng, Hao Peng, Ying Wang, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> ECCE 2014</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/6953770/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2014" data-type="conference" data-venue="ecce" data-authors="peng">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2014</span>
+  </div>
+  <div class="publication-title">Capacitor voltage balancing based on fundamental frequency sorting algorithm for modular multilevel converter</div>
+  <div class="publication-authors">Hao Peng, Ying Wang, Zibo Lv, Yan Deng, Xiangning He, Rongxiang Zhao</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> ECCE 2014</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/6953614/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2014" data-type="journal" data-venue="ieee tpel" data-authors="li">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2014</span>
+  </div>
+  <div class="publication-title">Virtual Quadrature Source-Based Sinusoidal Modulation Applied to High-Frequency Link Converter Enabling Arbitrary Direct AC-AC Power Conversion</div>
+  <div class="publication-authors">Chushan Li, Yan Deng, Zibo Lv, Wuhua Li, Xiangning He, Yousheng Wang</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Power Electronics, vol. 29, no. 8</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/6654335/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2014" data-type="journal" data-venue="ieee tpel" data-authors="hu">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2014</span>
+  </div>
+  <div class="publication-title">Asymmetry Three-Level Gird-Connected Current Hysteresis Control With Varying Bus Voltage and Virtual Oversample Method</div>
+  <div class="publication-authors">Yihua Hu, Yan Deng, Quanwei Liu, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Power Electronics, vol. 29, no. 6</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/6558794/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2014" data-type="journal" data-venue="ieee tpel" data-authors="chang">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2014</span>
+  </div>
+  <div class="publication-title">Analysis and Design of a Current-Source CLCC Resonant Converter for DBD Applications</div>
+  <div class="publication-authors">Lei Chang, Tangtang Guo, Jun Liu, Chi Zhang, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Power Electronics, vol. 29, no. 4</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/6523981/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<!-- 2013 Publications -->
+<li class="publication-item" data-year="2014" data-type="journal" data-authors="peng, wang, wang, deng, he, zhao">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2014</span>
+  </div>
+  <div class="publication-title">A Simple Capacitor Voltage Balancing Method with a Fundamental Sorting Frequency for Modular Multilevel Converters</div>
+  <div class="publication-authors">Hao Peng, Ying Wang, Kun Wang, Yan Deng, Xiangning He, Rongxiang Zhao</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> Journal of Power Electronics, Vol. 14, No. 6, pp. 1109-1118, November 2014</div>
+  <div class="publication-links">
+    <a href="https://doi.org/10.6113/JPE.2014.14.6.1109" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i>Publisher</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2014" data-type="journal" data-authors="hu, deng, long, lu">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2014</span>
+  </div>
+  <div class="publication-title">High Step-Up Passive Absorption Circuit Used in Non-Isolated High Step-Up Converter</div>
+  <div class="publication-authors">Yihua Hu, Yan Deng, Jiangtao Long, Xiaoxun Lu</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IET Power Electronics, Volume 7, Issue 8, August 2014</div>
+  <div class="publication-links">
+    <a href="https://doi.org/10.1049/iet-pel.2013.0003" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> Publisher</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2014" data-type="journal" data-authors="liu, tao, liu, deng, he">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2014</span>
+  </div>
+  <div class="publication-title">Voltage Unbalance and Harmonics Compensation for Islanded Microgrid Inverters</div>
+  <div class="publication-authors">Quanwei Liu, Yong Tao, Xunhao Liu, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IET Power Electronics, Volume 7, Issue 5, May 2014</div>
+  <div class="publication-links">
+    <a href="https://doi.org/10.1049/iet-pel.2013.0410" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> Publisher</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2013" data-type="conference" data-venue="ecce" data-authors="hu">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2013</span>
+  </div>
+  <div class="publication-title">A three-port high step-up DC-DC converter for PV system</div>
+  <div class="publication-authors">Yihua Hu, Yan Deng, Xiaoxun Lu, Yong Tao, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> ECCE Asia 2013</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/6579110/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2013" data-type="conference" data-venue="ecce" data-authors="li">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2013</span>
+  </div>
+  <div class="publication-title">Insolated high frequency link AC-AC converter based on sinusoidal wave modulation technology for voltage compensation</div>
+  <div class="publication-authors">Chushan Li, Yan Deng, Zibo Lv, Yong Tao, Wuhua Li, Xiangning He, Yousheng Wang</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> ECCE Asia 2013</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/6579090/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2013" data-type="conference" data-venue="ecce" data-authors="peng">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2013</span>
+  </div>
+  <div class="publication-title">An isolated ultra-low distortion inverter based on the differential output structure with wide soft-switching load range</div>
+  <div class="publication-authors">Hao Peng, Yan Deng, Ying Wang, Yong Tao, Xiangning He, Rongxiang Zhao</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> ECCE Asia 2013</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/6579092/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2013" data-type="conference" data-venue="apec" data-authors="hu">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2013</span>
+  </div>
+  <div class="publication-title">A high step-up passive absorption circuit used in non-isolated high step-up converter</div>
+  <div class="publication-authors">Yihua Hu, Yan Deng, Jiangtao Long, Xiaoxun Lu, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> APEC 2013</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/6520564/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<!-- 2012 Publications -->
+<li class="publication-item" data-year="2012" data-type="conference" data-authors="gao, kumar">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2012</span>
+  </div>
+  <div class="publication-title">Mitigation of Unbalanced Currents in Three-Phase Asynchronous Generator Supplying Single-Phase Nonlinear Load</div>
+  <div class="publication-authors">Sarsing Gao, Abhishek Kumar</div>
+  <div class="publication-venue"><i class="fas fa-chalkboard"></i> Proc. IEEE Conference, ICSET 2012, pp. 246-251, Kathmandu, Nepal</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/6357406" class="publication-link"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+
+<li class="publication-item" data-year="2012" data-type="journal" data-venue="ieee tpel" data-authors="li">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2012</span>
+  </div>
+  <div class="publication-title">Partial Power Conversion Device Without Large Electrolytic Capacitors for Power Flow Control and Voltage Compensation</div>
+  <div class="publication-authors">Chushan Li, Yan Deng, Hao Peng, Wuhua Li, Xiangning He, Yousheng Wang</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Power Electronics, vol. 27, no. 12</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/6176232/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2012" data-type="journal" data-venue="ieee tpel" data-authors="deng">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2012</span>
+  </div>
+  <div class="publication-title">Single-Switch High Step-Up Converters With Built-In Transformer Voltage Multiplier Cell</div>
+  <div class="publication-authors">Yan Deng, Qiang Rong, Wuhua Li, Yi Zhao, Jianjiang Shi, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Power Electronics, vol. 27, no. 8</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/6126054/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+<!-- 2011 Publications -->
+<li class="publication-item" data-year="2011" data-type="conference" data-venue="ieee" data-authors="liu">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2011</span>
+  </div>
+  <div class="publication-title">A novel AC-AC shunt active power filter without large energy storage elements</div>
+  <div class="publication-authors">Quanwei Liu, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> EPE 2011</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/6020309/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2011" data-type="conference" data-venue="ieee" data-authors="yin">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2011</span>
+  </div>
+  <div class="publication-title">Research on three-phase PWM hybrid-clamped five-level AC-DC converter with high power factor</div>
+  <div class="publication-authors">Kai Yin, Mingyao Ma, Cheng Tan, Quanwei Liu, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> EPE 2011</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/6020310/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2011" data-type="conference" data-venue="apec" data-authors="rong">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2011</span>
+  </div>
+  <div class="publication-title">Performance analysis of a single stage single phase high step-up soft switching boost converter</div>
+  <div class="publication-authors">Qiang Rong, Wuhua Li, Jianjiang Shi, Jiande Wu, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> APEC 2011</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/5744695/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2011" data-type="conference" data-venue="apec" data-authors="chen">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2011</span>
+  </div>
+  <div class="publication-title">An efficient semi-mathematical model for co-pack IGBT</div>
+  <div class="publication-authors">Na Chen, Yan Deng, Jiande Wu, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> APEC 2011</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/5744845/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2011" data-type="conference" data-venue="apec" data-authors="gu">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2011</span>
+  </div>
+  <div class="publication-title">A transformerless grid connected photovoltaic inverter with switched capacitors</div>
+  <div class="publication-authors">Yunjie Gu, Wuhua Li, Bo Yang, Jiande Wu, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> APEC 2011</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/5744861/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2011" data-type="conference" data-venue="apec" data-authors="li">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2011</span>
+  </div>
+  <div class="publication-title">A novel AC-AC series voltage compensator without large energy storage elements and using partial power conversion</div>
+  <div class="publication-authors">Chushan Li, Yan Deng, Yi Zhao, Wuhua Li, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> APEC 2011</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/5744583/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2011" data-type="journal" data-venue="ieee tpel" data-authors="zhao">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2011</span>
+  </div>
+  <div class="publication-title">Analysis, Design, and Experimentation of an Isolated ZVT Boost Converter With Coupled Inductors</div>
+  <div class="publication-authors">Yi Zhao, Wuhua Li, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Power Electronics, vol. 26, no. 2</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/5546984/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<!-- 2010 Publications -->
+<li class="publication-item" data-year="2010" data-type="journal" data-venue="zup" data-authors="deng">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2010</span>
+  </div>
+  <div class="publication-title">Application of Artificial Neural Network for Switching Loss Modeling in Power IGBTs</div>
+  <div class="publication-authors">Yan Deng, Xiang-Ning He, Jing Zhao, Yan Xiong, Yan-Qun Shen, Jian Jiang</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> Journal of Zhejiang University, vol. 11, no. 6</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/11285435/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2010" data-type="conference" data-venue="iecon" data-authors="yang">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2010</span>
+  </div>
+  <div class="publication-title">Phase-shifted full bridge converter featuring ZVS over the full load range</div>
+  <div class="publication-authors">Bingjian Yang, Jorge L. Duarte, Wuhua Li, Kai Yin, Xiangning He, Yan Deng</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> IECON 2010</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/5675238/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2010" data-type="conference" data-venue="iecon" data-authors="li">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2010</span>
+  </div>
+  <div class="publication-title">A non-isolated high step-up converter with built-in transformer derived from its isolated counterpart</div>
+  <div class="publication-authors">Weichen Li, Wuhua Li, Mingyao Ma, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> IECON 2010</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/5675059/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2010" data-type="journal" data-venue="ieee tpel" data-authors="li">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2010</span>
+  </div>
+  <div class="publication-title">Single-Stage Single-Phase High-Step-Up ZVT Boost Converter for Fuel-Cell Microgrid System</div>
+  <div class="publication-authors">Wuhua Li, Weichen Li, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Power Electronics, vol. 25, no. 12</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/5585777/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2010" data-type="journal" data-venue="ieee tpel" data-authors="li">
+  <div class="publication-header">
+    <span class="publication-type type-journal">Journal Article</span>
+    <span class="publication-year">2010</span>
+  </div>
+  <div class="publication-title">Interleaved Converter With Voltage Multiplier Cell for High Step-Up and High-Efficiency Conversion</div>
+  <div class="publication-authors">Wuhua Li, Yi Zhao, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> IEEE Transactions on Power Electronics, vol. 25, no. 9</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/5451182/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2010" data-type="conference" data-venue="apec" data-authors="li">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2010</span>
+  </div>
+  <div class="publication-title">Performance analysis of an interleaved high step-up converter with voltage multiplier cell</div>
+  <div class="publication-authors">Wuhua Li, Yi Zhao, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> APEC 2010</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/5433370/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2010" data-type="conference" data-venue="apec" data-authors="wang">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2010</span>
+  </div>
+  <div class="publication-title">Development of a compact 750KVA three-phase NPC three-level universal inverter module with specifically designed busbar</div>
+  <div class="publication-authors">Jun Wang, Binjian Yang, Jing Zhao, Yan Deng, Xiangning He, Xu Zhixin</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> APEC 2010</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/5433338/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2010" data-type="conference" data-venue="apec" data-authors="wu">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2010</span>
+  </div>
+  <div class="publication-title">50W Power Device (PD) power in Power over Ethernet (PoE) system with input current balance in four-pair architecture with two DC/DC converters</div>
+  <div class="publication-authors">Haimeng Wu, Zhengshi Wang, Jiande Wu, Xiangning He, Yan Deng</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> APEC 2010</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/5433614/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<!-- 2009 Publications -->
+<li class="publication-item" data-year="2009" data-type="conference" data-venue="apec" data-authors="li">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2009</span>
+  </div>
+  <div class="publication-title">A Review of Non-Isolated High Step-Up DC/DC Converters in Renewable Energy Applications</div>
+  <div class="publication-authors">Wuhua Li, Xiaodong Lv, Yan Deng, Jun Liu, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> APEC 2009</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/4802683/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2009" data-type="book" data-authors="">
+  <div class="publication-header">
+    <span class="publication-type type-book">Book (Chinese)</span>
+    <span class="publication-year">2009</span>
+  </div>
+  <div class="publication-title">中国电气工程大典 第二卷 电力电子技术</div>
+  <div class="publication-authors">China Electrical Engineering Canon, Volume 2: Power Electronics Technology</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> China Electric Power Press, ISBN: 978-7-5083-8144-2, First Edition, June 2009</div>
+</li>
+
+<!-- 2008 Publications -->
+<li class="publication-item" data-year="2008" data-type="book" data-authors="">
+  <div class="publication-header">
+    <span class="publication-type type-book">Book (Chinese)</span>
+    <span class="publication-year">2008</span>
+  </div>
+  <div class="publication-title">电气工程师手册</div>
+  <div class="publication-authors">Electrical Engineer's Handbook</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> China Electric Power Press, ISBN: 978-7-5083-5459-0, First Edition, April 2008</div>
+</li>
+
+<!-- 2007 Publications -->
+<li class="publication-item" data-year="2007" data-type="conference" data-venue="pesc" data-authors="yao">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2007</span>
+  </div>
+  <div class="publication-title">An Improved ZVT PWM Three Level Boost Converter for Power Factor Preregulator</div>
+  <div class="publication-authors">Gang Yao, Mingyao Ma, Yan Deng, Wuhua Li, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> PESC 2007</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/4342084/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2007" data-type="conference" data-venue="pesc" data-authors="li">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2007</span>
+  </div>
+  <div class="publication-title">A Family of Interleaved DC/DC Convert Deduced from a Basic Cell with Winding-Coupled Inductors for High Step-Up/Step-Down Conversions</div>
+  <div class="publication-authors">Wuhua Li, Jiande Wu, Dong Wang, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> PESC 2007</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/4342375/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2007" data-type="conference" data-venue="pesc" data-authors="li">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2007</span>
+  </div>
+  <div class="publication-title">Interleaved ZVT Boost Converters with Winding-Coupled Inductors and Built-In LC Low Pass Output Filter Suitable for Distributed Fuel Cell Generation System</div>
+  <div class="publication-authors">Wuhua Li, Yan Deng, Rui Xie, Jianjiang Shi, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> PESC 2007</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/4342072/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2007" data-type="conference" data-venue="pesc" data-authors="wang">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2007</span>
+  </div>
+  <div class="publication-title">Active Power Filter Based on Four-leg Hybrid-Clamped Technique</div>
+  <div class="publication-authors">Xiaofeng Wang, Yan Deng, Xiangning He, Wuhua Li</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> PESC 2007</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/4342031/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<!-- 2006 Publications -->
+<li class="publication-item" data-year="2006" data-type="book" data-authors="">
+  <div class="publication-header">
+    <span class="publication-type type-book">Book (Chinese)</span>
+    <span class="publication-year">2006</span>
+  </div>
+  <div class="publication-title">电力电子技术</div>
+  <div class="publication-authors">Power Electronics Technology</div>
+  <div class="publication-venue"><i class="fas fa-book"></i> Science Press, ISBN: 978-7-03-016873-3, First Edition, August 2006</div>
+</li>
+
+<li class="publication-item" data-year="2006" data-type="conference" data-venue="pesc" data-authors="yao">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2006</span>
+  </div>
+  <div class="publication-title">A ZCS PWM switch circuit for the interleaved boost converters</div>
+  <div class="publication-authors">Gang Yao, Haiyang He, Jianjiang Shi, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> PESC 2006</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/1712143/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2006" data-type="conference" data-venue="pesc" data-authors="li">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2006</span>
+  </div>
+  <div class="publication-title">A ZVZCS full-bridge DC/DC converter with a passive auxiliary circuit in the primary side</div>
+  <div class="publication-authors">Wuhua Li, Yanqun Shen, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> PESC 2006</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/1712116/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2006" data-type="conference" data-venue="pesc" data-authors="yao">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2006</span>
+  </div>
+  <div class="publication-title">A ZVT PWM three level boost converter for power factor preregulator</div>
+  <div class="publication-authors">Gang Yao, Haiyang He, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> PESC 2006</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/1711894/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2006" data-type="conference" data-venue="ipemc" data-authors="wang">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2006</span>
+  </div>
+  <div class="publication-title">Four-bridge Multilevel Converters Based on Hybrid-clamped Techniques</div>
+  <div class="publication-authors">Xiaofeng Wang, Yan Deng, Xiangning He</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> IPEMC 2006</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/4778338/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2006" data-type="conference" data-venue="isie" data-authors="shen">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2006</span>
+  </div>
+  <div class="publication-title">Switching Loss Analysis and Modeling of Power Semiconductor Devices Base on an Automatic Measurement System</div>
+  <div class="publication-authors">Yanqun Shen, Yan Xiong, Jian Jiang, Yan Deng, Xiangning He, Zhaohui Zeng</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> ISIE 2006</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/4078196/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+
+<li class="publication-item" data-year="2006" data-type="conference" data-venue="isie" data-authors="shen">
+  <div class="publication-header">
+    <span class="publication-type type-conference">Conference Paper</span>
+    <span class="publication-year">2006</span>
+  </div>
+  <div class="publication-title">Parasitic Inductance Effects on the Switching Loss Measurement of Power Semiconductor Devices</div>
+  <div class="publication-authors">Yanqun Shen, Jian Jiang, Yan Xiong, Yan Deng, Xiangning He, Zhaohui Zeng</div>
+  <div class="publication-venue"><i class="fas fa-calendar-alt"></i> ISIE 2006</div>
+  <div class="publication-links">
+    <a href="https://ieeexplore.ieee.org/document/4078195/" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+  </div>
+</li>
+  </ul>
+
+  <!-- No Results Template (hidden by default) -->
+  <div class="no-results" id="noResults" style="display: none;">
+    <i class="fas fa-search"></i>
+    <h3>No publications found</h3>
+    <p>Try adjusting your filters or search criteria</p>
+  </div>
+
+</div>
+
+<!-- Quick Contact Strip-->
+<div class="contact-strip">
+  <div class="contact-container">
+    <div class="contact-item">
+      <i class="fas fa-envelope contact-icon"></i>
+      <span class="contact-text">
+        <a href="mailto:regent.lab@zju.edu.cn">regent.lab@zju.edu.cn</a>
+      </span>
+    </div>
+    <span class="contact-divider">|</span>
+    <div class="contact-item">
+      <i class="fas fa-map-marker-alt contact-icon"></i>
+      <span class="contact-text">ZJU Yuquan Campus, Hangzhou</span>
+    </div>
+    <span class="contact-divider">|</span>
+    <div class="contact-item">
+      <i class="fas fa-flask contact-icon"></i>
+      <span class="contact-text">Lab tours: by appointment</span>
+    </div>
+  </div>
+  <div class="copyright-row">
+    <div class="contact-container">
+      <div class="copyright-text">
+        <br><i class="far fa-copyright"></i> 2026 ReGENT Research Group. All rights reserved. 
+        Zhejiang University, College of Electrical Engineering
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Publication data is embedded in the HTML list above
+// Filtering function
+function applyFilters() {
+  const yearFilter = document.getElementById('yearFilter').value.toLowerCase();
+  const typeFilter = document.getElementById('typeFilter').value.toLowerCase();
+  const searchFilter = document.getElementById('searchFilter').value.toLowerCase();
+  
+  const publications = document.querySelectorAll('.publication-item');
+  let visibleCount = 0;
+  
+  publications.forEach(pub => {
+    const pubYear = pub.getAttribute('data-year');
+    const pubType = pub.getAttribute('data-type');
+    const pubText = pub.innerText.toLowerCase();
+    
+    let yearMatch = yearFilter === 'all' || pubYear === yearFilter;
+    let typeMatch = typeFilter === 'all' || pubType === typeFilter;
+    let searchMatch = searchFilter === '' || pubText.includes(searchFilter);
+    
+    if (yearMatch && typeMatch && searchMatch) {
+      pub.style.display = 'block';
+      visibleCount++;
+    } else {
+      pub.style.display = 'none';
+    }
+  });
+  
+  // Update results count
+  document.getElementById('resultsCount').innerText = visibleCount;
+  
+  // Show/hide no results message
+  const noResults = document.getElementById('noResults');
+  if (visibleCount === 0) {
+    noResults.style.display = 'block';
+  } else {
+    noResults.style.display = 'none';
+  }
+  
+  // Update active filters display
+  updateActiveFilters();
+}
+
+// Reset all filters
+function resetFilters() {
+  document.getElementById('yearFilter').value = 'all';
+  document.getElementById('typeFilter').value = 'all';
+  document.getElementById('searchFilter').value = '';
+  applyFilters();
+}
+
+// Update active filters tags
+function updateActiveFilters() {
+  const yearFilter = document.getElementById('yearFilter');
+  const typeFilter = document.getElementById('typeFilter');
+  const searchFilter = document.getElementById('searchFilter');
+  
+  const activeFiltersDiv = document.getElementById('activeFilters');
+  activeFiltersDiv.innerHTML = '';
+  
+  if (yearFilter.value !== 'all') {
+    activeFiltersDiv.innerHTML += `<span class="filter-tag">Year: ${yearFilter.value} <i class="fas fa-times" onclick="removeFilter('year')"></i></span>`;
+  }
+  
+  if (typeFilter.value !== 'all') {
+    const typeText = typeFilter.options[typeFilter.selectedIndex].text;
+    activeFiltersDiv.innerHTML += `<span class="filter-tag">Type: ${typeText} <i class="fas fa-times" onclick="removeFilter('type')"></i></span>`;
+  }
+  
+  if (searchFilter.value !== '') {
+    activeFiltersDiv.innerHTML += `<span class="filter-tag">Search: "${searchFilter.value}" <i class="fas fa-times" onclick="removeFilter('search')"></i></span>`;
+  }
+}
+
+// Remove individual filter
+function removeFilter(filterType) {
+  if (filterType === 'year') {
+    document.getElementById('yearFilter').value = 'all';
+  } else if (filterType === 'type') {
+    document.getElementById('typeFilter').value = 'all';
+  } else if (filterType === 'search') {
+    document.getElementById('searchFilter').value = '';
+  }
+  applyFilters();
+}
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', function() {
+  applyFilters();
+});
+</script>
+
+<!-- Dropdown Script -->
+<script src="dropdown.js"></script>
+
+</body>
+</html>

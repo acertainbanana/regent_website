@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<!-- Link to external CSS file -->
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<div class="site-header">
+  <nav>
+    <a href="https://www.zju.edu.cn/"><img src="images/zju_logo.png" alt="ZJU Logo" class="zju-logo"></a>
+    <a href="index.html"><img src="images/regent_logo.png" alt="Regent Logo" class="regent-logo"></a>
+    <div class="nav-links">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        
+        <!-- RESEARCH with Dropdown -->
+        <li class="dropdown">
+          <a href="research.html" class="dropdown-toggle">RESEARCH <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="research.html#smart-grids">Smart Grids & Microgrids</a></li>
+            <li><a href="research.html#stability">Inverter Stability & Grid Forming Control</a></li>
+            <li><a href="research.html#topologies">Converter Topologies</a></li>
+            <li><a href="research.html#transportation">Electrified Transportation & Charging Interfaces</a></li>
+            <li><a href="research.html#power-info">Power & Information Transfer</a></li>
+            <li><a href="research.html#reliability">Reliability, Diagnostics & Power Quality</a></li>
+          </ul>
+        </li>
+        
+        <li><a href="publication.html">PUBLICATIONS</a></li>
+        <li><a href="people.html">MEMBERS</a></li>
+        <li><a href="project.html">PROJECTS</a></li>
+        <li class="dropdown">
+          <a href="contact.html" class="dropdown-toggle">CONTACT US<i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="recruitment.html">RECRUITMENT</a></li>
+            <li><a href="collaboration.html">COLLABORATION</a></li>
+          </ul>
+        </li>
+        <li><a href="">中/EN</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<div class="slideshow-container">
+  <div class="slider" id="slider">
+    <div class="mySlides">
+      <img src="images/group_pics/2026thesis_defense.jpg" style="width:100%" alt="2026 master thesis defense">
+      <div class="text">Congratulations on the thesis defense! </div>
+    </div>
+    <div class="mySlides">
+      <img src="images/group_pics/2026graduation.jpg" style="width:100%" alt="2026 graduation group picture">
+      <div class="text">Congratulations to Zhu Wenbo, Li Yao and Liu Ting on your graduation!</div>
+    </div>
+    <div class="mySlides">
+      <img src="images/group_pics/peas2025.jpg" style="width:100%" alt="2026 master thesis defense">
+      <div class="text">All the best to Qin Hao and Wang Yi at IEEE PEAS 2025!</div>
+    </div>
+  </div>
+  
+  <div class="dots-container">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
+<!-- Introduction Section -->
+<div class="intro-section">
+  <h2>Welcome to ReGENT!</h2>
+  <p>We conducts research on power‑electronic‑dominated energy systems, with a focus on smart grids and microgrids, advanced power conversion, and grid‑connected control. Our work combines modeling, control, and hardware validation to support reliable integration of renewable energy, energy storage, and electrified transportation. We collaborate with academic and industrial partners and support graduate training through research projects, publications, and international exchange.</p>
+</div>
+<div class="learn-more-container">
+  <a href="about.html" class="learn-more-btn">Learn More</a>
+</div>
+<br><br><br><br><br><br><br>
+
+<!-- Research Areas Section -->
+
+<div class="mresearch-section">
+  <h2>Research Areas</h2>
+  <div class="mresearch-grid">
+    
+    <div class="mresearch-card">
+      <img src="images/smart_grid.jpg" alt="Smart Grid, Microgrid">
+      <h3>Smart Grids & Microgrids</h3>
+      <p>Hierarchical control, energy management, and resilience modeling for microgrids</p>
+      <a href="research.html#smart-grids" class="card-link">Learn more →</a>
+    </div>
+    
+    <div class="mresearch-card">
+      <img src="images/stability.jpg" alt="Inverter-dominated Stability">
+      <h3>Inverter‑Dominated Stability & Grid‑Forming Control</h3>
+      <p>Advanced control (GFM/GFL) and analysis of impedance interactions in inverter-dominated networks</p>
+      <a href="research.html#stability" class="card-link">Learn more →</a>
+    </div>
+    
+    <div class="mresearch-card">
+      <img src="images/converter.jpg" alt="Converter Topologies">
+      <h3>Converter Topologies</h3>
+      <p>Researching switched-capacitor, differential, and multi-port converter designs</p>
+      <a href="research.html#topologies" class="card-link">Learn more →</a>
+    </div>
+    
+    <div class="mresearch-card">
+      <img src="images/electrification.png" alt="Electrified Transportation">
+      <h3>Electrified Transportation & Charging Interfaces</h3>
+      <p>Optimizing traction drives, charging interfaces, and grid interaction for e-mobility</p>
+      <a href="research.html#transportation" class="card-link">Learn more →</a>
+    </div>
+    
+    <div class="mresearch-card">
+      <img src="images/power_trf.jpg" alt="Power, Information Transfer">
+      <h3>Power & Information Transfer</h3>
+      <p>Dual-purpose modulation for power-line and wireless information transfer</p>
+      <a href="research.html#power-info" class="card-link">Learn more →</a>
+    </div>
+    
+    <div class="mresearch-card">
+      <img src="images/reliability.jpg" alt="System Reliability">
+      <h3>Reliability, Diagnostics, and Power Quality</h3>
+      <p>Enhancing power quality, fault tolerance, and predicting capacitor lifetime</p>
+      <a href="research.html#reliability" class="card-link">Learn more →</a>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Learn More Button -->
+<div class="learn-more-container">
+  <a href="research.html" class="learn-more-btn">Learn More</a>
+</div>
+
+<!-- Highlights Section -->
+<div class="highlights-section">
+  <h2>Highlights</h2>
+  
+  <div class="highlights-grid">
+    
+    <!-- Selected Publications Card -->
+    <div class="highlight-card">
+      <h3>Selected Publications</h3>
+      <ul class="publications-list">
+        <li>
+          <a href="https://ieeexplore.ieee.org/document/11222981/" class="pub-title">
+		  Decoupled Space Vector Modulation Model and Maximum Modulation Index Analysis for Nine-Switch Converters</a>
+          <div class="pub-authors">Yi Wang;Hao Qin;Yan Deng;Abhishek Kumar;Jiande Wu;Ramesh C. Bansal;Raj M. Naidoo</div>
+          <div class="pub-journal">IEEE Transactions on Power Electronics, 2026</div>
+        </li>
+		<li>
+          <a href="https://ieeexplore.ieee.org/document/11154845/" class="pub-title">
+		  Dual Phase-Shift Symmetrical SVM Strategy Optimized by Dual Modulation Indices for Single-Stage Isolated DC–AC Matrix Converter</a>
+          <div class="pub-authors">Guangcheng Ye;Hao Qin;Abhishek Kumar;Ramesh C. Bansal;Elena Gryazina;Yan Deng</div>
+          <div class="pub-journal">IEEE Transactions on Power Electronics, 2026</div>
+        </li>
+        <li>
+          <a href="https://ieeexplore.ieee.org/document/11134808/" class="pub-title">
+		  Analysis and Optimization of Wireless Power and Information Dual Transfer in Multicoil System</a>
+          <div class="pub-authors">Wanying Weng;Jiande Wu;Long Qin;Hao Chen;Yan Deng;Xiangning He</div>
+          <div class="pub-journal">IEEE Transactions on Power Electronics, 2026</div>
+        </li>
+        <li>
+          <a href="https://ieeexplore.ieee.org/document/11403637/" class="pub-title">
+		  Space Vector Modulation for Three Phase Three-Load Twelve-Switch Inverters</a>
+          <div class="pub-authors">Yi Wang;Hao Qin;Yan Deng;Abhishek Kumar;Ramesh Bansal;BT Maharaj</div>
+          <div class="pub-journal">2025 IEEE 3rd International Power Electronics and Application Symposium (PEAS)</div>
+        </li>
+        <li>
+          <a href="https://ieeexplore.ieee.org/document/11403055/" class="pub-title">
+		  A Unified Power Decoupling Control Strategy for Single-Phase Differential Boost/Buck-Boost Inverter</a>
+          <div class="pub-authors">Hao Qin;Liou Cai;Wenbo Zhu;Yan Deng;Abhishek Kumar;R. C. Bansal</div>
+          <div class="pub-journal">2025 IEEE 3rd International Power Electronics and Application Symposium (PEAS)</div>
+        </li>
+      </ul>
+      <a href="#" class="view-all-link">View all publications →</a>
+    </div>
+    
+    <!-- Featured Projects Card -->
+    <div class="highlight-card">
+      <h3>Featured Projects</h3>
+      <ul class="mprojects-list">
+        <li>
+          <a href="#" class="mproject-title">A Comprehensive Framework for a Sustainable Low-Carbon Resilient Energy System</a>
+          <div class="mproject-desc">South Africa - China Joint Research Programme based on 14th Annual Five-Year Plan, Ministry of Science and Technology (MOST), China</div>
+        </li>
+        <li>
+          <a href="#" class="mproject-title">Hybrid Energy Storage and Its Regulation for Island Power System</a>
+          <div class="mproject-desc">National High Technology Research and Development Program of China (863 Program), Ministry of Science and Technology (MOST), China</div>
+        </li>
+        <li>
+          <a href="#" class="mproject-title">Research on the Matching Rules of Large Capacity Power Electronic Hybrid Systems Under Multi- Time Scales</a>
+          <div class="mproject-desc">Natural Science Foundation of China (NSFC)</div>
+        </li>
+      </ul>
+      <a href="project.html" class="view-all-link">View all projects →</a>
+    </div>
+    
+    <!-- News Card -->
+    <div class="highlight-card">
+      <h3>News & Updates</h3>
+      <ul class="news-list">
+        <li>
+          <span class="news-date">Mar 2026</span>
+          <div class="news-content">
+            <div class="news-title">New Paper Accepted</div>
+            <div class="news-desc">"Decoupled Space Vector Modulation Model and Maximum Modulation Index Analysis for Nine-Switch Converters" accepted in IEEE TPEL</div>
+          </div>
+        </li>
+      </ul>
+      <a href="#" class="view-all-link">View all news →</a>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Quick Contact Strip-->
+<div class="contact-strip">
+    <div class="contact-container">
+    
+    <div class="contact-item">
+      <i class="fas fa-envelope contact-icon"></i>
+      <span class="contact-text">
+        <a href="mailto:regent.lab@zju.edu.cn">regent.lab@zju.edu.cn</a>
+      </span>
+    </div>
+    <span class="contact-divider">|</span>
+    <div class="contact-item">
+      <i class="fas fa-map-marker-alt contact-icon"></i>
+      <span class="contact-text">ZJU Yuquan Campus,Hangzhou</span>
+    </div>
+    <span class="contact-divider">|</span>
+    <div class="contact-item">
+      <i class="fas fa-flask contact-icon"></i>
+      <span class="contact-text">Lab tours: by appointment</span>
+    </div>
+  </div>
+  <div class="copyright-row">
+    <div class="contact-container">
+      <div class="copyright-text">
+	  <br>
+        <i class="far fa-copyright"></i> 2026 ReGENT Research Group. All rights reserved. 
+        Zhejiang University, College of Electrical Engineering
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Dropdown Script -->
+<script src="dropdown.js"></script>
+
+
+<script>
+// Your JavaScript code here (the same as before)
+let slideIndex = 1;
+const slides = document.getElementsByClassName("mySlides");
+const slider = document.getElementById("slider"); 
+const totalSlides = slides.length;
+
+// Clone the first slide and append it to the end
+const firstSlideClone = slides[0].cloneNode(true);
+slider.appendChild(firstSlideClone);
+
+// Clone the last slide and prepend it to the beginning
+const lastSlideClone = slides[totalSlides - 1].cloneNode(true);
+slider.insertBefore(lastSlideClone, slides[0]);
+
+// Update the slides collection and get new total
+const allSlides = document.getElementsByClassName("mySlides");
+const totalAllSlides = allSlides.length;
+
+// Set initial position to show the first real slide (index 1, after the prepended clone)
+let currentIndex = 1;
+slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+function showSlides(n) {
+  // Remove transition for instant jumps
+  if (n === 0 || n === totalAllSlides - 1) {
+    slider.style.transition = 'none';
+  } else {
+    slider.style.transition = 'transform 0.5s ease-in-out';
+  }
+  
+  // Update current index
+  currentIndex = n;
+  
+  // Apply transform
+  slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+  
+  // Update dots based on real slide
+  let realSlideIndex = currentIndex;
+  if (currentIndex === 0) {
+    realSlideIndex = totalSlides; // Last slide
+  } else if (currentIndex === totalAllSlides - 1) {
+    realSlideIndex = 1; // First slide
+  }
+  
+  let dots = document.getElementsByClassName("dot");
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  dots[realSlideIndex - 1].className += " active";
+}
+
+// Handle transition end to reset position
+slider.addEventListener('transitionend', function() {
+  // If at the clone of first slide (end), jump to real first slide
+  if (currentIndex === totalAllSlides - 1) {
+    slider.style.transition = 'none';
+    currentIndex = 1;
+    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+  
+  // If at the clone of last slide (beginning), jump to real last slide
+  if (currentIndex === 0) {
+    slider.style.transition = 'none';
+    currentIndex = totalSlides;
+    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+});
+
+function plusSlides(n) {
+  // Add transition
+  slider.style.transition = 'transform 0.5s ease-in-out';
+  
+  // Update index
+  let newIndex = currentIndex + n;
+  
+  // Ensure we don't go out of bounds
+  if (newIndex < 0) {
+    newIndex = 0;
+  } else if (newIndex >= totalAllSlides) {
+    newIndex = totalAllSlides - 1;
+  }
+  
+  // Update current index and transform
+  currentIndex = newIndex;
+  slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+  
+  // Update dots based on real slide
+  let realSlideIndex = currentIndex;
+  if (currentIndex === 0) {
+    realSlideIndex = totalSlides; // Last slide
+  } else if (currentIndex === totalAllSlides - 1) {
+    realSlideIndex = 1; // First slide
+  }
+  
+  let dots = document.getElementsByClassName("dot");
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  dots[realSlideIndex - 1].className += " active";
+}
+
+function currentSlide(n) {
+  // Convert dot index to actual slide index (accounting for prepended clone)
+  // n is 1-based for real slides
+  let targetIndex = n; // Real slides start at index 1 (after the prepended clone)
+  
+  // If we're going to the same slide, do nothing
+  if (targetIndex === currentIndex) return;
+  
+  // Add transition
+  slider.style.transition = 'transform 0.5s ease-in-out';
+  
+  // Update current index and transform
+  currentIndex = targetIndex;
+  slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+  
+  // Update dots
+  let dots = document.getElementsByClassName("dot");
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  dots[n - 1].className += " active";
+}
+
+// Initialize dots
+let dots = document.getElementsByClassName("dot");
+dots[0].className += " active";
+
+// Auto-slide functionality - switches every 10 seconds
+let autoSlideInterval = setInterval(function() {
+  plusSlides(1);  // Move to next slide
+}, 15000);  // 10000 milliseconds = 10 seconds
+
+// Get buttons for reset functionality
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+const dotElements = document.querySelectorAll('.dot');
+
+function resetAutoSlide() {
+  // Clear existing interval
+  clearInterval(autoSlideInterval);
+  // Start new interval
+  autoSlideInterval = setInterval(function() {
+    plusSlides(1);
+  }, 15000);
+}
+
+// Reset timer when user manually changes slides
+if (prevButton) prevButton.addEventListener('click', resetAutoSlide);
+if (nextButton) nextButton.addEventListener('click', resetAutoSlide);
+
+dotElements.forEach(dot => {
+  dot.addEventListener('click', resetAutoSlide);
+});
+
+// Also reset timer when using touch/swipe
+if (slider) {
+  slider.addEventListener('touchstart', resetAutoSlide);
+}
+</script>
+
+</body>
+</html>
