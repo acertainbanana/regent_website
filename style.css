@@ -254,7 +254,7 @@ nav img {
 /* Slideshow container */
 .slideshow-container {
   width: 100%;
-  height: 525px;
+  height: 500px;
   position: relative;
   margin: auto;
   overflow: hidden;
@@ -265,7 +265,7 @@ nav img {
   display: flex;
   transition: transform 0.5s ease-in-out;
   width: 100%;
-  height: 100%;
+  height: 95%;
 }
 
 .mySlides {
@@ -276,9 +276,9 @@ nav img {
 }
 
 .mySlides img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;  /* This ensures images cover the area without distortion */
+  width:auto;
+  height: auto;
+  object-fit: cover; 
   display: block;
 }
 
@@ -311,12 +311,16 @@ nav img {
 .text {
   color: #f2f2f2;
   font-size: 15px;
-  padding: 8px 12px;
+  padding: 5px 12px;        /* 5px top/bottom, 12px left/right → 5px distance around text vertically */
+  background: rgba(0, 0, 0, 0.7);  /* semi-transparent black */
+  border-radius: 6px;       /* optional rounded corners */
   position: absolute;
   bottom: 20px;
-  width: 100%;
+  left: 50%;                /* center horizontally */
+  transform: translateX(-50%); /* shift left by half its own width */
   text-align: center;
   z-index: 1;
+  white-space: nowrap;      /* no text from wrapping*/
 }
 
 .dots-container {
